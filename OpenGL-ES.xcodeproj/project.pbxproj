@@ -14,6 +14,8 @@
 		9C092E7724D176D700E4346A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C092E7624D176D700E4346A /* Assets.xcassets */; };
 		9C092E7A24D176D700E4346A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C092E7824D176D700E4346A /* LaunchScreen.storyboard */; };
 		9C092E7D24D176D700E4346A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C092E7C24D176D700E4346A /* main.m */; };
+		9C092E8524D178CE00E4346A /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C092E8424D178CD00E4346A /* BaseViewController.m */; };
+		9C092E8D24D17AC000E4346A /* CubeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C092E8C24D17ABF00E4346A /* CubeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,11 @@
 		9C092E7924D176D700E4346A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C092E7B24D176D700E4346A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C092E7C24D176D700E4346A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9C092E8324D178CD00E4346A /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		9C092E8424D178CD00E4346A /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		9C092E8624D178DE00E4346A /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		9C092E8B24D17ABF00E4346A /* CubeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CubeViewController.h; sourceTree = "<group>"; };
+		9C092E8C24D17ABF00E4346A /* CubeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CubeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,12 +68,16 @@
 		9C092E6924D176D500E4346A /* OpenGL-ES */ = {
 			isa = PBXGroup;
 			children = (
+				9C092E8A24D17A9D00E4346A /* 正方体旋转 */,
 				9C092E6A24D176D500E4346A /* AppDelegate.h */,
 				9C092E6B24D176D500E4346A /* AppDelegate.m */,
 				9C092E6D24D176D500E4346A /* SceneDelegate.h */,
 				9C092E6E24D176D500E4346A /* SceneDelegate.m */,
 				9C092E7024D176D500E4346A /* ViewController.h */,
 				9C092E7124D176D500E4346A /* ViewController.m */,
+				9C092E8324D178CD00E4346A /* BaseViewController.h */,
+				9C092E8424D178CD00E4346A /* BaseViewController.m */,
+				9C092E8624D178DE00E4346A /* PrefixHeader.pch */,
 				9C092E7324D176D500E4346A /* Main.storyboard */,
 				9C092E7624D176D700E4346A /* Assets.xcassets */,
 				9C092E7824D176D700E4346A /* LaunchScreen.storyboard */,
@@ -74,6 +85,15 @@
 				9C092E7C24D176D700E4346A /* main.m */,
 			);
 			path = "OpenGL-ES";
+			sourceTree = "<group>";
+		};
+		9C092E8A24D17A9D00E4346A /* 正方体旋转 */ = {
+			isa = PBXGroup;
+			children = (
+				9C092E8B24D17ABF00E4346A /* CubeViewController.h */,
+				9C092E8C24D17ABF00E4346A /* CubeViewController.m */,
+			);
+			path = "正方体旋转";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +167,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C092E7224D176D500E4346A /* ViewController.m in Sources */,
+				9C092E8D24D17AC000E4346A /* CubeViewController.m in Sources */,
+				9C092E8524D178CE00E4346A /* BaseViewController.m in Sources */,
 				9C092E6C24D176D500E4346A /* AppDelegate.m in Sources */,
 				9C092E7D24D176D700E4346A /* main.m in Sources */,
 				9C092E6F24D176D500E4346A /* SceneDelegate.m in Sources */,
@@ -290,6 +312,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/OpenGL-ES/PrefixHeader.pch";
 				INFOPLIST_FILE = "OpenGL-ES/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -307,6 +331,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/OpenGL-ES/PrefixHeader.pch";
 				INFOPLIST_FILE = "OpenGL-ES/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -15,10 +15,29 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Vec-uc-ity">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="NCK-bE-Ntp"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="y0U-vu-oPX"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Vec-uc-ity" secondAttribute="bottom" id="EF2-Cu-VBX"/>
+                            <constraint firstItem="Vec-uc-ity" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="K2d-D9-lVF"/>
+                            <constraint firstItem="Vec-uc-ity" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Y5z-KV-lyL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Vec-uc-ity" secondAttribute="trailing" id="nC8-ad-jGY"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="usN-L4-LcJ"/>
+                    <connections>
+                        <outlet property="tableView" destination="Vec-uc-ity" id="eis-oS-UDn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
