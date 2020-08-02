@@ -24,7 +24,7 @@
 
 
     self.dataSource = [@[
-                           [self makeItemWithTitle:@"正方体旋转" subTitle:@"" image:@"" className:@"CubeViewController" selector:@""],
+                           [self makeItemWithTitle:@"GLSL正方体旋转" subTitle:@"" image:@"" className:@"CubeViewController" selector:@""],
 //                           [self makeItemWithTitle:@"SliderView" subTitle:@"" image:@"" className:@"SliderViewVC" selector:@""],
 //                           [self makeItemWithTitle:@"FloatButton" subTitle:@"" image:@"" className:@"FloatButtonVC" selector:@""],
 
