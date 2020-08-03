@@ -8,6 +8,7 @@
 
 #import "CubeViewController.h"
 #import <GLKit/GLKit.h>
+#import "CubeView.h"
 
 @interface CubeViewController ()
 
@@ -18,6 +19,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+
+    CubeView *cube = [[CubeView alloc] initWithFrame:self.view.bounds];
+
+    [self.view addSubview:cube];
 }
 
 /*
