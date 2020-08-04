@@ -16,11 +16,10 @@
 		9C092E7D24D176D700E4346A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C092E7C24D176D700E4346A /* main.m */; };
 		9C092E8524D178CE00E4346A /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C092E8424D178CD00E4346A /* BaseViewController.m */; };
 		9C092E8D24D17AC000E4346A /* CubeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C092E8C24D17ABF00E4346A /* CubeViewController.m */; };
+		CE3116AB24D9A26100E37AB3 /* CCView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3116AA24D9A26100E37AB3 /* CCView.m */; };
 		CE54D5DE24D4041600DAEEF2 /* CubeView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE54D5DD24D4041600DAEEF2 /* CubeView.m */; };
 		CE54D5E024D4046100DAEEF2 /* shaderf.glsl in Resources */ = {isa = PBXBuildFile; fileRef = CE54D5DF24D4046100DAEEF2 /* shaderf.glsl */; };
 		CE54D5E224D4046F00DAEEF2 /* shaderv.glsl in Resources */ = {isa = PBXBuildFile; fileRef = CE54D5E124D4046F00DAEEF2 /* shaderv.glsl */; };
-		CEFF4F4124D7ECA00049C8BC /* shaderf.fsh in Resources */ = {isa = PBXBuildFile; fileRef = CEFF4F3F24D7ECA00049C8BC /* shaderf.fsh */; };
-		CEFF4F4224D7ECA00049C8BC /* shaderv.vsh in Resources */ = {isa = PBXBuildFile; fileRef = CEFF4F4024D7ECA00049C8BC /* shaderv.vsh */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,12 +40,12 @@
 		9C092E8624D178DE00E4346A /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		9C092E8B24D17ABF00E4346A /* CubeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CubeViewController.h; sourceTree = "<group>"; };
 		9C092E8C24D17ABF00E4346A /* CubeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CubeViewController.m; sourceTree = "<group>"; };
+		CE3116A924D9A26100E37AB3 /* CCView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCView.h; sourceTree = "<group>"; };
+		CE3116AA24D9A26100E37AB3 /* CCView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCView.m; sourceTree = "<group>"; };
 		CE54D5DC24D4041600DAEEF2 /* CubeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CubeView.h; sourceTree = "<group>"; };
 		CE54D5DD24D4041600DAEEF2 /* CubeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CubeView.m; sourceTree = "<group>"; };
 		CE54D5DF24D4046100DAEEF2 /* shaderf.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = shaderf.glsl; sourceTree = "<group>"; };
 		CE54D5E124D4046F00DAEEF2 /* shaderv.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = shaderv.glsl; sourceTree = "<group>"; };
-		CEFF4F3F24D7ECA00049C8BC /* shaderf.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shaderf.fsh; sourceTree = "<group>"; };
-		CEFF4F4024D7ECA00049C8BC /* shaderv.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shaderv.vsh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,11 +102,11 @@
 			children = (
 				9C092E8B24D17ABF00E4346A /* CubeViewController.h */,
 				9C092E8C24D17ABF00E4346A /* CubeViewController.m */,
+				CE3116A924D9A26100E37AB3 /* CCView.h */,
+				CE3116AA24D9A26100E37AB3 /* CCView.m */,
 				CE54D5DC24D4041600DAEEF2 /* CubeView.h */,
 				CE54D5DD24D4041600DAEEF2 /* CubeView.m */,
 				CE54D5DF24D4046100DAEEF2 /* shaderf.glsl */,
-				CEFF4F3F24D7ECA00049C8BC /* shaderf.fsh */,
-				CEFF4F4024D7ECA00049C8BC /* shaderv.vsh */,
 				CE54D5E124D4046F00DAEEF2 /* shaderv.glsl */,
 			);
 			path = "GLSL加载图片";
@@ -173,8 +172,6 @@
 				CE54D5E024D4046100DAEEF2 /* shaderf.glsl in Resources */,
 				9C092E7A24D176D700E4346A /* LaunchScreen.storyboard in Resources */,
 				9C092E7724D176D700E4346A /* Assets.xcassets in Resources */,
-				CEFF4F4224D7ECA00049C8BC /* shaderv.vsh in Resources */,
-				CEFF4F4124D7ECA00049C8BC /* shaderf.fsh in Resources */,
 				9C092E7524D176D500E4346A /* Main.storyboard in Resources */,
 				CE54D5E224D4046F00DAEEF2 /* shaderv.glsl in Resources */,
 			);
@@ -191,6 +188,7 @@
 				9C092E7224D176D500E4346A /* ViewController.m in Sources */,
 				9C092E8D24D17AC000E4346A /* CubeViewController.m in Sources */,
 				9C092E8524D178CE00E4346A /* BaseViewController.m in Sources */,
+				CE3116AB24D9A26100E37AB3 /* CCView.m in Sources */,
 				9C092E6C24D176D500E4346A /* AppDelegate.m in Sources */,
 				9C092E7D24D176D700E4346A /* main.m in Sources */,
 				9C092E6F24D176D500E4346A /* SceneDelegate.m in Sources */,
