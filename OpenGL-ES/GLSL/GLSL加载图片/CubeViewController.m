@@ -9,7 +9,6 @@
 #import "CubeViewController.h"
 #import <GLKit/GLKit.h>
 #import "CubeView.h"
-#import "CCView.h"
 
 @interface CubeViewController ()
 
