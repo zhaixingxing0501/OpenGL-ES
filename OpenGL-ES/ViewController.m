@@ -27,11 +27,18 @@
                            [self makeItemWithTitle:@"CoreAnimation粒子动画2" subTitle:@"" image:@"" className:@"EmitterVC2" selector:@""],
                            [self makeItemWithTitle:@"CoreAnimation粒子动画3" subTitle:@"" image:@"" className:@"EmitterVC3" selector:@""],
                            [self makeItemWithTitle:@"CoreAnimation粒子动画4" subTitle:@"" image:@"" className:@"EmitterVC4" selector:@""],
-                           
+
                            [self makeItemWithTitle:@"GLSL加载图片" subTitle:@"" image:@"" className:@"CubeViewController" selector:@""],
                            [self makeItemWithTitle:@"GLSL三角形变换" subTitle:@"" image:@"" className:@"GLSLTriangleTransformVC" selector:@""],
                            [self makeItemWithTitle:@"滤镜分屏" subTitle:@"" image:@"" className:@"FilterViewController" selector:@""],
-//                           [self makeItemWithTitle:@"FloatButton" subTitle:@"" image:@"" className:@"FloatButtonVC" selector:@""],
+                           [self makeItemWithTitle:@"GPUImage初探" subTitle:@"" image:@"" className:@"GPUImageExampleVC" selector:@""],
+                           //                           [self makeItemWithTitle:@"GPUImage初探" subTitle:@"" image:@"" className:@"GPUImageExampleVC" selector:@""],
+
+                           //                           [self makeItemWithTitle:@"GPUImage初探" subTitle:@"" image:@"" className:@"GPUImageExampleVC" selector:@""],
+
+                           //                           [self makeItemWithTitle:@"GPUImage初探" subTitle:@"" image:@"" className:@"GPUImageExampleVC" selector:@""],
+
+                           //                           [self makeItemWithTitle:@"GPUImage初探" subTitle:@"" image:@"" className:@"GPUImageExampleVC" selector:@""],
 
                        ] mutableCopy];
 }

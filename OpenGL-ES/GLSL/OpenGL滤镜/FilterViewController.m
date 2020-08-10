@@ -116,7 +116,7 @@ typedef struct {
     [self bindRenderLayer:layer];
 
     //5. 获取图片路径
-    NSString *imagePath = [[NSBundle mainBundle] pathForResource:@"img3" ofType:@"jpg"];
+    NSString *imagePath = [[NSBundle mainBundle] pathForResource:@"img4" ofType:@"jpg"];
     UIImage *image = [UIImage imageWithContentsOfFile:imagePath];
 
     //6. 图片转换成纹理数据
