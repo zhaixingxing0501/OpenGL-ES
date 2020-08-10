@@ -30,7 +30,7 @@
                            
                            [self makeItemWithTitle:@"GLSL加载图片" subTitle:@"" image:@"" className:@"CubeViewController" selector:@""],
                            [self makeItemWithTitle:@"GLSL三角形变换" subTitle:@"" image:@"" className:@"GLSLTriangleTransformVC" selector:@""],
-//                           [self makeItemWithTitle:@"SliderView" subTitle:@"" image:@"" className:@"SliderViewVC" selector:@""],
+                           [self makeItemWithTitle:@"滤镜分屏" subTitle:@"" image:@"" className:@"FilterViewController" selector:@""],
 //                           [self makeItemWithTitle:@"FloatButton" subTitle:@"" image:@"" className:@"FloatButtonVC" selector:@""],
 
                        ] mutableCopy];

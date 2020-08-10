@@ -27,6 +27,11 @@
 		9C3B219224E11FC6006EEC23 /* FilterBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3B218E24E11FC6006EEC23 /* FilterBar.m */; };
 		9C3B219324E11FC6006EEC23 /* FilterBarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3B219024E11FC6006EEC23 /* FilterBarCell.m */; };
 		9C3B219624E11FE8006EEC23 /* FilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3B219524E11FE8006EEC23 /* FilterViewController.m */; };
+		9C3B219924E1295D006EEC23 /* splitScreen_normal.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 9C3B219724E1295D006EEC23 /* splitScreen_normal.vsh */; };
+		9C3B219A24E1295D006EEC23 /* splitScreen_normal.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 9C3B219824E1295D006EEC23 /* splitScreen_normal.fsh */; };
+		9C3B219C24E12ADD006EEC23 /* img3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9C3B219B24E12ADD006EEC23 /* img3.jpg */; };
+		9C3B219F24E12BB6006EEC23 /* splitScreen_2.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 9C3B219D24E12BB6006EEC23 /* splitScreen_2.fsh */; };
+		9C3B21A024E12BB6006EEC23 /* splitScreen_2.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 9C3B219E24E12BB6006EEC23 /* splitScreen_2.vsh */; };
 		9C8C7C4624DB951800486AE4 /* EmitterVC2.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C8C7C4524DB951800486AE4 /* EmitterVC2.m */; };
 		9C8C7C4A24DB9D1B00486AE4 /* EmitterVC3.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C8C7C4824DB9D1B00486AE4 /* EmitterVC3.m */; };
 		9C8C7C4B24DB9D1B00486AE4 /* EmitterVC3.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C8C7C4924DB9D1B00486AE4 /* EmitterVC3.xib */; };
@@ -83,6 +88,11 @@
 		9C3B219124E11FC6006EEC23 /* FilterBarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterBarCell.h; sourceTree = "<group>"; };
 		9C3B219424E11FE8006EEC23 /* FilterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FilterViewController.h; sourceTree = "<group>"; };
 		9C3B219524E11FE8006EEC23 /* FilterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FilterViewController.m; sourceTree = "<group>"; };
+		9C3B219724E1295D006EEC23 /* splitScreen_normal.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = splitScreen_normal.vsh; sourceTree = "<group>"; };
+		9C3B219824E1295D006EEC23 /* splitScreen_normal.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = splitScreen_normal.fsh; sourceTree = "<group>"; };
+		9C3B219B24E12ADD006EEC23 /* img3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img3.jpg; sourceTree = "<group>"; };
+		9C3B219D24E12BB6006EEC23 /* splitScreen_2.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = splitScreen_2.fsh; sourceTree = "<group>"; };
+		9C3B219E24E12BB6006EEC23 /* splitScreen_2.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = splitScreen_2.vsh; sourceTree = "<group>"; };
 		9C8C7C4424DB951800486AE4 /* EmitterVC2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmitterVC2.h; sourceTree = "<group>"; };
 		9C8C7C4524DB951800486AE4 /* EmitterVC2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmitterVC2.m; sourceTree = "<group>"; };
 		9C8C7C4724DB9D1B00486AE4 /* EmitterVC3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmitterVC3.h; sourceTree = "<group>"; };
@@ -185,6 +195,7 @@
 		9C3B216624E11E98006EEC23 /* OpenGL滤镜 */ = {
 			isa = PBXGroup;
 			children = (
+				9C3B219B24E12ADD006EEC23 /* img3.jpg */,
 				9C3B216B24E11F15006EEC23 /* FilterBar */,
 				9C3B216C24E11F15006EEC23 /* GLSL_File */,
 				9C3B219424E11FE8006EEC23 /* FilterViewController.h */,
@@ -207,6 +218,8 @@
 		9C3B216C24E11F15006EEC23 /* GLSL_File */ = {
 			isa = PBXGroup;
 			children = (
+				9C3B219D24E12BB6006EEC23 /* splitScreen_2.fsh */,
+				9C3B219E24E12BB6006EEC23 /* splitScreen_2.vsh */,
 				9C3B218224E11F84006EEC23 /* splitScreen_3.fsh */,
 				9C3B218124E11F84006EEC23 /* splitScreen_3.vsh */,
 				9C3B218524E11F84006EEC23 /* splitScreen_4.fsh */,
@@ -215,6 +228,8 @@
 				9C3B218424E11F84006EEC23 /* splitScreen_6.vsh */,
 				9C3B218024E11F84006EEC23 /* splitScreen_9.fsh */,
 				9C3B217F24E11F84006EEC23 /* splitScreen_9.vsh */,
+				9C3B219824E1295D006EEC23 /* splitScreen_normal.fsh */,
+				9C3B219724E1295D006EEC23 /* splitScreen_normal.vsh */,
 			);
 			path = GLSL_File;
 			sourceTree = "<group>";
@@ -339,6 +354,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE54D5E024D4046100DAEEF2 /* shaderf.glsl in Resources */,
+				9C3B219924E1295D006EEC23 /* splitScreen_normal.vsh in Resources */,
 				9C3B218624E11F84006EEC23 /* splitScreen_6.fsh in Resources */,
 				9C8C7C6F24DBF00900486AE4 /* img2.jpg in Resources */,
 				9C8C7C5024DBA2DC00486AE4 /* EmitterVC4.xib in Resources */,
@@ -350,11 +366,15 @@
 				9C3B218724E11F84006EEC23 /* splitScreen_9.vsh in Resources */,
 				9C3B218D24E11F84006EEC23 /* splitScreen_4.fsh in Resources */,
 				9C092E7524D176D500E4346A /* Main.storyboard in Resources */,
+				9C3B219C24E12ADD006EEC23 /* img3.jpg in Resources */,
 				9C8C7C5D24DBA77100486AE4 /* GLSLTriangleTransformVC.xib in Resources */,
+				9C3B219A24E1295D006EEC23 /* splitScreen_normal.fsh in Resources */,
 				9C8F5B2924DAA187009790F5 /* hongbao.png in Resources */,
 				9C8F5B2A24DAA187009790F5 /* zongzi2.jpg in Resources */,
 				9C3B218A24E11F84006EEC23 /* splitScreen_3.fsh in Resources */,
 				9C8F5B2C24DAA187009790F5 /* jinbi.png in Resources */,
+				9C3B219F24E12BB6006EEC23 /* splitScreen_2.fsh in Resources */,
+				9C3B21A024E12BB6006EEC23 /* splitScreen_2.vsh in Resources */,
 				9C8F5B2B24DAA187009790F5 /* zongzi.png in Resources */,
 				CE54D5E224D4046F00DAEEF2 /* shaderv.glsl in Resources */,
 				9C8C7C4B24DB9D1B00486AE4 /* EmitterVC3.xib in Resources */,
