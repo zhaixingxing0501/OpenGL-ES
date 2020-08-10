@@ -35,6 +35,35 @@ typedef struct {
 
 @implementation FilterViewController
 
+- (void)dealloc {
+    //1. 上下文释放
+    if ([EAGLContext currentContext] == self.context) {
+        [EAGLContext setCurrentContext:nil];
+    }
+
+    //2. 顶点缓冲区释放
+    if (_vertexBuffer) {
+        glDeleteBuffers(1, &_vertexBuffer);
+        _vertexBuffer = 0;
+    }
+
+    //3. 顶点数组释放
+    if (_vertices) {
+        free(_vertices);
+        _vertices = nil;
+    }
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+
+    // 移除 displayLink
+    if (self.displayLink) {
+        [self.displayLink invalidate];
+        self.displayLink = nil;
+    }
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = UIColor.whiteColor;
