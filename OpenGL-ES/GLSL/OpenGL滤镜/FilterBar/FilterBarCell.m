@@ -1,11 +1,10 @@
 //
 //  FilterBarCell.m
-//  OpenGL-ES
+//  001--滤镜处理
 //
-//  Created by nucarf on 2020/8/10.
-//  Copyright © 2020 zhaixingxing. All rights reserved.
+//  Created by CC老师 on 2019/4/23.
+//  Copyright © 2019年 CC老师. All rights reserved.
 //
-
 
 #import "FilterBarCell.h"
 
