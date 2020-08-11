@@ -130,7 +130,7 @@ typedef struct {
 
     //2. 创建图层并添加
     CAEAGLLayer *layer = [[CAEAGLLayer alloc] init];
-    layer.frame = CGRectMake(0, 10, self.view.frame.size.width, self.view.frame.size.width);
+    layer.frame = CGRectMake(0, kNavigationBarHeight, self.view.frame.size.width, self.view.frame.size.width);
     layer.contentsScale = [[UIScreen mainScreen] scale];
     [self.view.layer addSublayer:layer];
 
