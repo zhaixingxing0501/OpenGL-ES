@@ -130,7 +130,7 @@ typedef struct {
 
     //2. 创建图层并添加
     CAEAGLLayer *layer = [[CAEAGLLayer alloc] init];
-    layer.frame = CGRectMake(0, 100, self.view.frame.size.width, self.view.frame.size.width);
+    layer.frame = CGRectMake(0, 10, self.view.frame.size.width, self.view.frame.size.width);
     layer.contentsScale = [[UIScreen mainScreen] scale];
     [self.view.layer addSublayer:layer];
 
@@ -145,7 +145,7 @@ typedef struct {
     [self bindRenderLayer:layer];
 
     //5. 获取图片路径
-    NSString *imagePath = [[NSBundle mainBundle] pathForResource:@"img4" ofType:@"jpg"];
+    NSString *imagePath = [[NSBundle mainBundle] pathForResource:@"img3" ofType:@"jpg"];
     UIImage *image = [UIImage imageWithContentsOfFile:imagePath];
 
     //6. 图片转换成纹理数据
@@ -373,35 +373,8 @@ typedef struct {
 }
 
 - (void)filterBar:(FilterBar *)filterBar didScrollToIndex:(NSUInteger)index {
-    switch (index) {
-        case 0:
-            [self setupNormalShaderProgram];
-            break;
-        case 1:
-            [self setupShaderProgramWithName:@"splitScreen_2"];
-
-            break;
-        case 2:
-            [self setupShaderProgramWithName:@"splitScreen_3"];
-
-            break;
-        case 3:
-            [self setupShaderProgramWithName:@"splitScreen_4"];
-
-            break;
-        case 4:
-            [self setupShaderProgramWithName:@"splitScreen_6"];
-
-            break;
-
-        case 5:
-            [self setupShaderProgramWithName:@"splitScreen_9"];
-
-            break;
-
-        default:
-            break;
-    }
+    NSString *fileName = self.dataSource[index];
+    [self setupShaderProgramWithName:fileName];
 
     [self startFilterAnimation];
 }
@@ -413,8 +386,8 @@ typedef struct {
 
     filterBar.delegate = self;
     [self.view addSubview:filterBar];
-
-    filterBar.itemList = @[@"无", @"2分屏", @"3分屏", @"4分屏", @"6分屏", @"9分屏"];
+    self.dataSource = [@[@"splitScreen_normal", @"gray", @"reversal", @"mosaic_square", @"mosaic_hexagon", @"mosaic_triangle", @"splitScreen_2", @"splitScreen_3", @"splitScreen_4", @"splitScreen_6", @"splitScreen_9"] mutableCopy];
+    filterBar.itemList = @[@"无", @"灰度", @"翻转", @"马赛克1", @"马赛克1", @"马赛克1", @"2分屏", @"3分屏", @"4分屏", @"6分屏", @"9分屏"];
 }
 
 //获取渲染缓存区的宽

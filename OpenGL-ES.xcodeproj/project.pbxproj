@@ -54,6 +54,19 @@
 		9C8F5B2A24DAA187009790F5 /* zongzi2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9C8F5B2624DAA186009790F5 /* zongzi2.jpg */; };
 		9C8F5B2B24DAA187009790F5 /* zongzi.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C8F5B2724DAA186009790F5 /* zongzi.png */; };
 		9C8F5B2C24DAA187009790F5 /* jinbi.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C8F5B2824DAA187009790F5 /* jinbi.png */; };
+		9CACF70624E245A300CB35E4 /* mosaic_triangle.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 9CACF6FC24E245A200CB35E4 /* mosaic_triangle.vsh */; };
+		9CACF70724E245A300CB35E4 /* reversal.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 9CACF6FD24E245A200CB35E4 /* reversal.vsh */; };
+		9CACF70824E245A300CB35E4 /* mosaic_square.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 9CACF6FE24E245A200CB35E4 /* mosaic_square.fsh */; };
+		9CACF70924E245A300CB35E4 /* gray.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 9CACF6FF24E245A200CB35E4 /* gray.fsh */; };
+		9CACF70A24E245A300CB35E4 /* mosaic_square.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 9CACF70024E245A200CB35E4 /* mosaic_square.vsh */; };
+		9CACF70B24E245A300CB35E4 /* mosaic_triangle.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 9CACF70124E245A200CB35E4 /* mosaic_triangle.fsh */; };
+		9CACF70C24E245A300CB35E4 /* gray.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 9CACF70224E245A200CB35E4 /* gray.vsh */; };
+		9CACF70D24E245A300CB35E4 /* mosaic_hexagon.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 9CACF70324E245A200CB35E4 /* mosaic_hexagon.vsh */; };
+		9CACF70E24E245A300CB35E4 /* mosaic_hexagon.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 9CACF70424E245A200CB35E4 /* mosaic_hexagon.fsh */; };
+		9CACF70F24E245A300CB35E4 /* reversal.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 9CACF70524E245A300CB35E4 /* reversal.fsh */; };
+		9CACF71324E24E4900CB35E4 /* GLSL注释讲解.md in Resources */ = {isa = PBXBuildFile; fileRef = 9CACF71224E24E4900CB35E4 /* GLSL注释讲解.md */; };
+		9CACF73124E2846900CB35E4 /* WID-small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9CACF72F24E2846900CB35E4 /* WID-small.jpg */; };
+		9CACF73924E285E700CB35E4 /* GPUPhotoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CACF73724E285E700CB35E4 /* GPUPhotoVC.m */; };
 		CE54D5DE24D4041600DAEEF2 /* CubeView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE54D5DD24D4041600DAEEF2 /* CubeView.m */; };
 		CE54D5E024D4046100DAEEF2 /* shaderf.glsl in Resources */ = {isa = PBXBuildFile; fileRef = CE54D5DF24D4046100DAEEF2 /* shaderf.glsl */; };
 		CE54D5E224D4046F00DAEEF2 /* shaderv.glsl in Resources */ = {isa = PBXBuildFile; fileRef = CE54D5E124D4046F00DAEEF2 /* shaderv.glsl */; };
@@ -131,6 +144,20 @@
 		9C8F5B2624DAA186009790F5 /* zongzi2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = zongzi2.jpg; sourceTree = "<group>"; };
 		9C8F5B2724DAA186009790F5 /* zongzi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zongzi.png; sourceTree = "<group>"; };
 		9C8F5B2824DAA187009790F5 /* jinbi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jinbi.png; sourceTree = "<group>"; };
+		9CACF6FC24E245A200CB35E4 /* mosaic_triangle.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = mosaic_triangle.vsh; sourceTree = "<group>"; };
+		9CACF6FD24E245A200CB35E4 /* reversal.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = reversal.vsh; sourceTree = "<group>"; };
+		9CACF6FE24E245A200CB35E4 /* mosaic_square.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = mosaic_square.fsh; sourceTree = "<group>"; };
+		9CACF6FF24E245A200CB35E4 /* gray.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = gray.fsh; sourceTree = "<group>"; };
+		9CACF70024E245A200CB35E4 /* mosaic_square.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = mosaic_square.vsh; sourceTree = "<group>"; };
+		9CACF70124E245A200CB35E4 /* mosaic_triangle.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = mosaic_triangle.fsh; sourceTree = "<group>"; };
+		9CACF70224E245A200CB35E4 /* gray.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = gray.vsh; sourceTree = "<group>"; };
+		9CACF70324E245A200CB35E4 /* mosaic_hexagon.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = mosaic_hexagon.vsh; sourceTree = "<group>"; };
+		9CACF70424E245A200CB35E4 /* mosaic_hexagon.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = mosaic_hexagon.fsh; sourceTree = "<group>"; };
+		9CACF70524E245A300CB35E4 /* reversal.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = reversal.fsh; sourceTree = "<group>"; };
+		9CACF71224E24E4900CB35E4 /* GLSL注释讲解.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "GLSL注释讲解.md"; sourceTree = "<group>"; };
+		9CACF72F24E2846900CB35E4 /* WID-small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "WID-small.jpg"; sourceTree = "<group>"; };
+		9CACF73624E285E700CB35E4 /* GPUPhotoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPUPhotoVC.h; sourceTree = "<group>"; };
+		9CACF73724E285E700CB35E4 /* GPUPhotoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPUPhotoVC.m; sourceTree = "<group>"; };
 		BD1A28A4E3180DE77EE15B31 /* Pods-OpenGL-ES.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenGL-ES.release.xcconfig"; path = "Target Support Files/Pods-OpenGL-ES/Pods-OpenGL-ES.release.xcconfig"; sourceTree = "<group>"; };
 		CE54D5DC24D4041600DAEEF2 /* CubeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CubeView.h; sourceTree = "<group>"; };
 		CE54D5DD24D4041600DAEEF2 /* CubeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CubeView.m; sourceTree = "<group>"; };
@@ -208,6 +235,7 @@
 		9C3B216624E11E98006EEC23 /* OpenGL滤镜 */ = {
 			isa = PBXGroup;
 			children = (
+				9CACF71224E24E4900CB35E4 /* GLSL注释讲解.md */,
 				9C3B21A524E13FF7006EEC23 /* img4.jpg */,
 				9C3B219B24E12ADD006EEC23 /* img3.jpg */,
 				9C3B216B24E11F15006EEC23 /* FilterBar */,
@@ -232,6 +260,16 @@
 		9C3B216C24E11F15006EEC23 /* GLSL_File */ = {
 			isa = PBXGroup;
 			children = (
+				9CACF6FF24E245A200CB35E4 /* gray.fsh */,
+				9CACF70224E245A200CB35E4 /* gray.vsh */,
+				9CACF70424E245A200CB35E4 /* mosaic_hexagon.fsh */,
+				9CACF70324E245A200CB35E4 /* mosaic_hexagon.vsh */,
+				9CACF6FE24E245A200CB35E4 /* mosaic_square.fsh */,
+				9CACF70024E245A200CB35E4 /* mosaic_square.vsh */,
+				9CACF70124E245A200CB35E4 /* mosaic_triangle.fsh */,
+				9CACF6FC24E245A200CB35E4 /* mosaic_triangle.vsh */,
+				9CACF70524E245A300CB35E4 /* reversal.fsh */,
+				9CACF6FD24E245A200CB35E4 /* reversal.vsh */,
 				9C3B219D24E12BB6006EEC23 /* splitScreen_2.fsh */,
 				9C3B219E24E12BB6006EEC23 /* splitScreen_2.vsh */,
 				9C3B218224E11F84006EEC23 /* splitScreen_3.fsh */,
@@ -251,8 +289,11 @@
 		9C3B21A124E1376A006EEC23 /* GPUImage */ = {
 			isa = PBXGroup;
 			children = (
+				9CACF72F24E2846900CB35E4 /* WID-small.jpg */,
 				9C3B21A224E138FF006EEC23 /* GPUImageExampleVC.h */,
 				9C3B21A324E138FF006EEC23 /* GPUImageExampleVC.m */,
+				9CACF73624E285E700CB35E4 /* GPUPhotoVC.h */,
+				9CACF73724E285E700CB35E4 /* GPUPhotoVC.m */,
 			);
 			path = GPUImage;
 			sourceTree = "<group>";
@@ -398,29 +439,41 @@
 				CE54D5E024D4046100DAEEF2 /* shaderf.glsl in Resources */,
 				9C3B219924E1295D006EEC23 /* splitScreen_normal.vsh in Resources */,
 				9C3B218624E11F84006EEC23 /* splitScreen_6.fsh in Resources */,
+				9CACF71324E24E4900CB35E4 /* GLSL注释讲解.md in Resources */,
 				9C8C7C6F24DBF00900486AE4 /* img2.jpg in Resources */,
+				9CACF70B24E245A300CB35E4 /* mosaic_triangle.fsh in Resources */,
 				9C8C7C5024DBA2DC00486AE4 /* EmitterVC4.xib in Resources */,
 				9C092E7A24D176D700E4346A /* LaunchScreen.storyboard in Resources */,
 				9C092E7724D176D700E4346A /* Assets.xcassets in Resources */,
+				9CACF70924E245A300CB35E4 /* gray.fsh in Resources */,
+				9CACF70A24E245A300CB35E4 /* mosaic_square.vsh in Resources */,
 				9C8C7C6B24DBB23100486AE4 /* shaderV1.glsl in Resources */,
 				9C8C7C6D24DBB23F00486AE4 /* shaderF1.glsl in Resources */,
 				9C3B218824E11F84006EEC23 /* splitScreen_9.fsh in Resources */,
 				9C3B218724E11F84006EEC23 /* splitScreen_9.vsh in Resources */,
 				9C3B218D24E11F84006EEC23 /* splitScreen_4.fsh in Resources */,
+				9CACF70824E245A300CB35E4 /* mosaic_square.fsh in Resources */,
 				9C092E7524D176D500E4346A /* Main.storyboard in Resources */,
 				9C3B21A624E13FF7006EEC23 /* img4.jpg in Resources */,
+				9CACF70C24E245A300CB35E4 /* gray.vsh in Resources */,
 				9C3B219C24E12ADD006EEC23 /* img3.jpg in Resources */,
+				9CACF70724E245A300CB35E4 /* reversal.vsh in Resources */,
+				9CACF70F24E245A300CB35E4 /* reversal.fsh in Resources */,
+				9CACF70624E245A300CB35E4 /* mosaic_triangle.vsh in Resources */,
 				9C8C7C5D24DBA77100486AE4 /* GLSLTriangleTransformVC.xib in Resources */,
+				9CACF73124E2846900CB35E4 /* WID-small.jpg in Resources */,
 				9C3B219A24E1295D006EEC23 /* splitScreen_normal.fsh in Resources */,
 				9C8F5B2924DAA187009790F5 /* hongbao.png in Resources */,
 				9C8F5B2A24DAA187009790F5 /* zongzi2.jpg in Resources */,
 				9C3B218A24E11F84006EEC23 /* splitScreen_3.fsh in Resources */,
 				9C8F5B2C24DAA187009790F5 /* jinbi.png in Resources */,
+				9CACF70E24E245A300CB35E4 /* mosaic_hexagon.fsh in Resources */,
 				9C3B219F24E12BB6006EEC23 /* splitScreen_2.fsh in Resources */,
 				9C3B21A024E12BB6006EEC23 /* splitScreen_2.vsh in Resources */,
 				9C8F5B2B24DAA187009790F5 /* zongzi.png in Resources */,
 				CE54D5E224D4046F00DAEEF2 /* shaderv.glsl in Resources */,
 				9C8C7C4B24DB9D1B00486AE4 /* EmitterVC3.xib in Resources */,
+				9CACF70D24E245A300CB35E4 /* mosaic_hexagon.vsh in Resources */,
 				9C3B218C24E11F84006EEC23 /* splitScreen_6.vsh in Resources */,
 				9C3B218924E11F84006EEC23 /* splitScreen_3.vsh in Resources */,
 				9C3B218B24E11F84006EEC23 /* splitScreen_4.vsh in Resources */,
@@ -489,6 +542,7 @@
 				9C3B21A424E138FF006EEC23 /* GPUImageExampleVC.m in Sources */,
 				9C8C7C5324DBA35900486AE4 /* AnimationButton.m in Sources */,
 				9C3B219624E11FE8006EEC23 /* FilterViewController.m in Sources */,
+				9CACF73924E285E700CB35E4 /* GPUPhotoVC.m in Sources */,
 				9C3B219324E11FC6006EEC23 /* FilterBarCell.m in Sources */,
 				9C8C7C6024DBA7BD00486AE4 /* TriangleTransformView.m in Sources */,
 				9C092E6C24D176D500E4346A /* AppDelegate.m in Sources */,
