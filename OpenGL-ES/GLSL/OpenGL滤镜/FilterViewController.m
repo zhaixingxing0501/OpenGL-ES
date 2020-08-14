@@ -103,6 +103,7 @@ typedef struct {
 
     // 传入时间
     CGFloat currentTime = self.displayLink.timestamp - self.startTimeInterval;
+    NSLog(@"currentTime: %f", currentTime);
     GLuint time = glGetUniformLocation(self.program, "Time");
     glUniform1f(time, currentTime);
 
@@ -145,7 +146,7 @@ typedef struct {
     [self bindRenderLayer:layer];
 
     //5. 获取图片路径
-    NSString *imagePath = [[NSBundle mainBundle] pathForResource:@"img3" ofType:@"jpg"];
+    NSString *imagePath = [[NSBundle mainBundle] pathForResource:@"img4" ofType:@"jpg"];
     UIImage *image = [UIImage imageWithContentsOfFile:imagePath];
 
     //6. 图片转换成纹理数据
@@ -386,8 +387,8 @@ typedef struct {
 
     filterBar.delegate = self;
     [self.view addSubview:filterBar];
-    self.dataSource = [@[@"splitScreen_normal", @"gray", @"reversal", @"mosaic_square", @"mosaic_hexagon", @"mosaic_triangle", @"splitScreen_2", @"splitScreen_3", @"splitScreen_4", @"splitScreen_6", @"splitScreen_9"] mutableCopy];
-    filterBar.itemList = @[@"无", @"灰度", @"翻转", @"马赛克1", @"马赛克1", @"马赛克1", @"2分屏", @"3分屏", @"4分屏", @"6分屏", @"9分屏"];
+    self.dataSource = [@[@"splitScreen_normal", @"scale", @"soul", @"shake", @"shakeWhite", @"glitch", @"vertigos", @"gray", @"reversal", @"mosaic_square", @"mosaic_hexagon", @"mosaic_triangle", @"splitScreen_2", @"splitScreen_3", @"splitScreen_4", @"splitScreen_6", @"splitScreen_9"] mutableCopy];
+    filterBar.itemList = @[@"无", @"缩放", @"灵魂出窍", @"抖动", @"闪白", @"毛刺", @"幻觉", @"灰度", @"翻转", @"马赛克1", @"马赛克1", @"马赛克1", @"2分屏", @"3分屏", @"4分屏", @"6分屏", @"9分屏"];
 }
 
 //获取渲染缓存区的宽

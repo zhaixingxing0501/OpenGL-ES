@@ -11,6 +11,7 @@
 
 @interface GPUImageExampleVC ()
 {
+    
     GPUImagePicture *sourcePicture;
     GPUImageOutput<GPUImageInput> *sepiaFilter, *sepiaFilter2;
 }
@@ -24,6 +25,7 @@
 
     GPUImageView *gpuIMGV = [[GPUImageView alloc] initWithFrame:self.view.bounds];
     self.view = gpuIMGV;
+    gpuIMGV.backgroundColor = UIColor.blackColor;
 
     UISlider *imageSlider = [[UISlider alloc] initWithFrame:CGRectMake(25.0, kScreenHeight - kNavigationBarHeight - 50.0, kScreenWidth - 50.0, 40.0)];
     [imageSlider addTarget:self action:@selector(updateSliderValue:) forControlEvents:UIControlEventValueChanged];
@@ -35,8 +37,8 @@
     [gpuIMGV addSubview:imageSlider];
 
     [self setupDisplayFiltering];
-    [self setupImageResampling];
-    [self setupImageFilteringToDisk];
+//    [self setupImageResampling];
+//    [self setupImageFilteringToDisk];
 }
 
 - (void)updateSliderValue:(id)sender
@@ -50,19 +52,27 @@
 
 - (void)setupDisplayFiltering;
 {
-    UIImage *inputImage = [UIImage imageNamed:@"WID-small.jpg"]; // The WID.jpg example is greater than 2048 pixels tall, so it fails on older devices
+    //1.获取渲染数据源
+    UIImage *inputImage = [UIImage imageNamed:@"WID-small.jpg"];
+    sourcePicture = [[GPUImagePicture alloc] initWithImage:inputImage];
 
-    sourcePicture = [[GPUImagePicture alloc] initWithImage:inputImage smoothlyScaleOutput:YES];
-    sepiaFilter = [[GPUImageTiltShiftFilter alloc] init];
-//    sepiaFilter = [[GPUImageSobelEdgeDetectionFilter alloc] init];
+    //2.选择使用的滤镜 (黑白素描滤镜)
+    GPUImageSketchFilter *sepiaFilter = [[GPUImageSketchFilter alloc] init];
 
-    GPUImageView *imageView = (GPUImageView *)self.view;
-    [sepiaFilter forceProcessingAtSize:imageView.sizeInPixels]; // This is now needed to make the filter run at the smaller output size
+    //3.设置要渲染的区域
+    [sepiaFilter forceProcessingAtSize:inputImage.size];
 
+    //4. 添加滤镜
     [sourcePicture addTarget:sepiaFilter];
-    [sepiaFilter addTarget:imageView];
 
+    //5. 图片添加到view
+
+    GPUImageView *gpuImageView = (GPUImageView *)self.view;
+    [sepiaFilter addTarget:gpuImageView];
+
+    //6.开始渲染
     [sourcePicture processImage];
+    
 }
 
 - (void)setupImageFilteringToDisk;
@@ -74,7 +84,7 @@
     NSLog(@"First image filtering");
     GPUImagePicture *stillImageSource = [[GPUImagePicture alloc] initWithURL:inputImageURL];
 
-    GPUImageSepiaFilter *stillImageFilter = [[GPUImageSepiaFilter alloc] init];
+    GPUImageTiltShiftFilter *stillImageFilter = [[GPUImageTiltShiftFilter alloc] init];
     GPUImageVignetteFilter *vignetteImageFilter = [[GPUImageVignetteFilter alloc] init];
     vignetteImageFilter.vignetteEnd = 0.6;
     vignetteImageFilter.vignetteStart = 0.4;
@@ -107,7 +117,7 @@
 //    GPUImageUnsharpMaskFilter *stillImageFilter2 = [[GPUImageUnsharpMaskFilter alloc] init];
     GPUImageSepiaFilter *stillImageFilter2 = [[GPUImageSepiaFilter alloc] init];
     NSLog(@"Second image filtering");
-    UIImage *inputImage = [UIImage imageNamed:@"Lambeau.jpg"];
+    UIImage *inputImage = [UIImage imageNamed:@"WID-small.jpg"];
     UIImage *quickFilteredImage = [stillImageFilter2 imageByFilteringImage:inputImage];
 
     // Write images to disk, as proof

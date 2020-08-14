@@ -30,7 +30,7 @@
 
                            [self makeItemWithTitle:@"GLSL加载图片" subTitle:@"" image:@"" className:@"CubeViewController" selector:@""],
                            [self makeItemWithTitle:@"GLSL三角形变换" subTitle:@"" image:@"" className:@"GLSLTriangleTransformVC" selector:@""],
-                           [self makeItemWithTitle:@"滤镜分屏" subTitle:@"" image:@"" className:@"FilterViewController" selector:@""],
+                           [self makeItemWithTitle:@"滤镜效果" subTitle:@"" image:@"" className:@"FilterViewController" selector:@""],
                            [self makeItemWithTitle:@"GPUImage初探" subTitle:@"" image:@"" className:@"GPUImageExampleVC" selector:@""],
                                                       [self makeItemWithTitle:@"GPUImage初探" subTitle:@"" image:@"" className:@"GPUPhotoVC" selector:@""],
 

@@ -49,6 +49,18 @@
 		9C8C7C6B24DBB23100486AE4 /* shaderV1.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 9C8C7C6A24DBB23100486AE4 /* shaderV1.glsl */; };
 		9C8C7C6D24DBB23F00486AE4 /* shaderF1.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 9C8C7C6C24DBB23F00486AE4 /* shaderF1.glsl */; };
 		9C8C7C6F24DBF00900486AE4 /* img2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9C8C7C6E24DBF00900486AE4 /* img2.jpg */; };
+		9C8CBDA824E623A4003AD0C8 /* vertigos.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 9C8CBD9C24E623A3003AD0C8 /* vertigos.vsh */; };
+		9C8CBDA924E623A4003AD0C8 /* soul.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 9C8CBD9D24E623A4003AD0C8 /* soul.vsh */; };
+		9C8CBDAA24E623A4003AD0C8 /* scale.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 9C8CBD9E24E623A4003AD0C8 /* scale.vsh */; };
+		9C8CBDAB24E623A4003AD0C8 /* shakeWhite.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 9C8CBD9F24E623A4003AD0C8 /* shakeWhite.fsh */; };
+		9C8CBDAC24E623A5003AD0C8 /* soul.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 9C8CBDA024E623A4003AD0C8 /* soul.fsh */; };
+		9C8CBDAD24E623A5003AD0C8 /* shake.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 9C8CBDA124E623A4003AD0C8 /* shake.fsh */; };
+		9C8CBDAE24E623A5003AD0C8 /* shakeWhite.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 9C8CBDA224E623A4003AD0C8 /* shakeWhite.vsh */; };
+		9C8CBDAF24E623A5003AD0C8 /* glitch.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 9C8CBDA324E623A4003AD0C8 /* glitch.vsh */; };
+		9C8CBDB024E623A5003AD0C8 /* glitch.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 9C8CBDA424E623A4003AD0C8 /* glitch.fsh */; };
+		9C8CBDB124E623A5003AD0C8 /* scale.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 9C8CBDA524E623A4003AD0C8 /* scale.fsh */; };
+		9C8CBDB224E623A5003AD0C8 /* vertigos.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 9C8CBDA624E623A4003AD0C8 /* vertigos.fsh */; };
+		9C8CBDB324E623A5003AD0C8 /* shake.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 9C8CBDA724E623A4003AD0C8 /* shake.vsh */; };
 		9C8F5B2424DAA137009790F5 /* EmitterVC1.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C8F5B2324DAA137009790F5 /* EmitterVC1.m */; };
 		9C8F5B2924DAA187009790F5 /* hongbao.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C8F5B2524DAA186009790F5 /* hongbao.png */; };
 		9C8F5B2A24DAA187009790F5 /* zongzi2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9C8F5B2624DAA186009790F5 /* zongzi2.jpg */; };
@@ -138,6 +150,18 @@
 		9C8C7C6A24DBB23100486AE4 /* shaderV1.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = shaderV1.glsl; sourceTree = "<group>"; };
 		9C8C7C6C24DBB23F00486AE4 /* shaderF1.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = shaderF1.glsl; sourceTree = "<group>"; };
 		9C8C7C6E24DBF00900486AE4 /* img2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img2.jpg; sourceTree = "<group>"; };
+		9C8CBD9C24E623A3003AD0C8 /* vertigos.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = vertigos.vsh; sourceTree = "<group>"; };
+		9C8CBD9D24E623A4003AD0C8 /* soul.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = soul.vsh; sourceTree = "<group>"; };
+		9C8CBD9E24E623A4003AD0C8 /* scale.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = scale.vsh; sourceTree = "<group>"; };
+		9C8CBD9F24E623A4003AD0C8 /* shakeWhite.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shakeWhite.fsh; sourceTree = "<group>"; };
+		9C8CBDA024E623A4003AD0C8 /* soul.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = soul.fsh; sourceTree = "<group>"; };
+		9C8CBDA124E623A4003AD0C8 /* shake.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shake.fsh; sourceTree = "<group>"; };
+		9C8CBDA224E623A4003AD0C8 /* shakeWhite.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shakeWhite.vsh; sourceTree = "<group>"; };
+		9C8CBDA324E623A4003AD0C8 /* glitch.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = glitch.vsh; sourceTree = "<group>"; };
+		9C8CBDA424E623A4003AD0C8 /* glitch.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = glitch.fsh; sourceTree = "<group>"; };
+		9C8CBDA524E623A4003AD0C8 /* scale.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = scale.fsh; sourceTree = "<group>"; };
+		9C8CBDA624E623A4003AD0C8 /* vertigos.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = vertigos.fsh; sourceTree = "<group>"; };
+		9C8CBDA724E623A4003AD0C8 /* shake.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shake.vsh; sourceTree = "<group>"; };
 		9C8F5B2224DAA137009790F5 /* EmitterVC1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmitterVC1.h; sourceTree = "<group>"; };
 		9C8F5B2324DAA137009790F5 /* EmitterVC1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmitterVC1.m; sourceTree = "<group>"; };
 		9C8F5B2524DAA186009790F5 /* hongbao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hongbao.png; sourceTree = "<group>"; };
@@ -260,6 +284,18 @@
 		9C3B216C24E11F15006EEC23 /* GLSL_File */ = {
 			isa = PBXGroup;
 			children = (
+				9C8CBDA424E623A4003AD0C8 /* glitch.fsh */,
+				9C8CBDA324E623A4003AD0C8 /* glitch.vsh */,
+				9C8CBDA524E623A4003AD0C8 /* scale.fsh */,
+				9C8CBD9E24E623A4003AD0C8 /* scale.vsh */,
+				9C8CBDA124E623A4003AD0C8 /* shake.fsh */,
+				9C8CBDA724E623A4003AD0C8 /* shake.vsh */,
+				9C8CBD9F24E623A4003AD0C8 /* shakeWhite.fsh */,
+				9C8CBDA224E623A4003AD0C8 /* shakeWhite.vsh */,
+				9C8CBDA024E623A4003AD0C8 /* soul.fsh */,
+				9C8CBD9D24E623A4003AD0C8 /* soul.vsh */,
+				9C8CBDA624E623A4003AD0C8 /* vertigos.fsh */,
+				9C8CBD9C24E623A3003AD0C8 /* vertigos.vsh */,
 				9CACF6FF24E245A200CB35E4 /* gray.fsh */,
 				9CACF70224E245A200CB35E4 /* gray.vsh */,
 				9CACF70424E245A200CB35E4 /* mosaic_hexagon.fsh */,
@@ -442,14 +478,19 @@
 				9CACF71324E24E4900CB35E4 /* GLSL注释讲解.md in Resources */,
 				9C8C7C6F24DBF00900486AE4 /* img2.jpg in Resources */,
 				9CACF70B24E245A300CB35E4 /* mosaic_triangle.fsh in Resources */,
+				9C8CBDB224E623A5003AD0C8 /* vertigos.fsh in Resources */,
 				9C8C7C5024DBA2DC00486AE4 /* EmitterVC4.xib in Resources */,
 				9C092E7A24D176D700E4346A /* LaunchScreen.storyboard in Resources */,
+				9C8CBDAA24E623A4003AD0C8 /* scale.vsh in Resources */,
 				9C092E7724D176D700E4346A /* Assets.xcassets in Resources */,
+				9C8CBDAE24E623A5003AD0C8 /* shakeWhite.vsh in Resources */,
 				9CACF70924E245A300CB35E4 /* gray.fsh in Resources */,
 				9CACF70A24E245A300CB35E4 /* mosaic_square.vsh in Resources */,
 				9C8C7C6B24DBB23100486AE4 /* shaderV1.glsl in Resources */,
+				9C8CBDA924E623A4003AD0C8 /* soul.vsh in Resources */,
 				9C8C7C6D24DBB23F00486AE4 /* shaderF1.glsl in Resources */,
 				9C3B218824E11F84006EEC23 /* splitScreen_9.fsh in Resources */,
+				9C8CBDAC24E623A5003AD0C8 /* soul.fsh in Resources */,
 				9C3B218724E11F84006EEC23 /* splitScreen_9.vsh in Resources */,
 				9C3B218D24E11F84006EEC23 /* splitScreen_4.fsh in Resources */,
 				9CACF70824E245A300CB35E4 /* mosaic_square.fsh in Resources */,
@@ -460,8 +501,10 @@
 				9CACF70724E245A300CB35E4 /* reversal.vsh in Resources */,
 				9CACF70F24E245A300CB35E4 /* reversal.fsh in Resources */,
 				9CACF70624E245A300CB35E4 /* mosaic_triangle.vsh in Resources */,
+				9C8CBDAB24E623A4003AD0C8 /* shakeWhite.fsh in Resources */,
 				9C8C7C5D24DBA77100486AE4 /* GLSLTriangleTransformVC.xib in Resources */,
 				9CACF73124E2846900CB35E4 /* WID-small.jpg in Resources */,
+				9C8CBDB124E623A5003AD0C8 /* scale.fsh in Resources */,
 				9C3B219A24E1295D006EEC23 /* splitScreen_normal.fsh in Resources */,
 				9C8F5B2924DAA187009790F5 /* hongbao.png in Resources */,
 				9C8F5B2A24DAA187009790F5 /* zongzi2.jpg in Resources */,
@@ -470,13 +513,18 @@
 				9CACF70E24E245A300CB35E4 /* mosaic_hexagon.fsh in Resources */,
 				9C3B219F24E12BB6006EEC23 /* splitScreen_2.fsh in Resources */,
 				9C3B21A024E12BB6006EEC23 /* splitScreen_2.vsh in Resources */,
+				9C8CBDA824E623A4003AD0C8 /* vertigos.vsh in Resources */,
 				9C8F5B2B24DAA187009790F5 /* zongzi.png in Resources */,
+				9C8CBDAF24E623A5003AD0C8 /* glitch.vsh in Resources */,
 				CE54D5E224D4046F00DAEEF2 /* shaderv.glsl in Resources */,
 				9C8C7C4B24DB9D1B00486AE4 /* EmitterVC3.xib in Resources */,
 				9CACF70D24E245A300CB35E4 /* mosaic_hexagon.vsh in Resources */,
 				9C3B218C24E11F84006EEC23 /* splitScreen_6.vsh in Resources */,
 				9C3B218924E11F84006EEC23 /* splitScreen_3.vsh in Resources */,
 				9C3B218B24E11F84006EEC23 /* splitScreen_4.vsh in Resources */,
+				9C8CBDB024E623A5003AD0C8 /* glitch.fsh in Resources */,
+				9C8CBDAD24E623A5003AD0C8 /* shake.fsh in Resources */,
+				9C8CBDB324E623A5003AD0C8 /* shake.vsh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
