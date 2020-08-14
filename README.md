@@ -1,6 +1,6 @@
 # Visual Animation
-
-
+    
+    
 ## 一、粒子特效
 1. 粒子特效1
     ![](READMEMedia/CoreAnimationEmitte1.gif)
@@ -9,9 +9,13 @@
 3. 粒子特效3
     ![](READMEMedia/CoreAnimationEmitte3.gif)
 4. 粒子特效4
-     ![](READMEMedia/CoreAnimationEmitte1.gif)
-## 二、OPenGL ES 滤镜特效
+    ![](READMEMedia/CoreAnimationEmitte4.gif)
 
+-------
+
+
+## 二、OPenGL ES 滤镜特效
+    
 1. OpenGL ES 原图加载 (splitScreen_normal)
 2. 分屏滤镜 (splitScreen_2/3/4/6/9)
 3. 灰度滤镜 (gray)
