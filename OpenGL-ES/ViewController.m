@@ -22,34 +22,46 @@
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
     self.tableView.tableFooterView = [UIView new];
 
-    self.dataSource = [@[
-                           [self makeItemWithTitle:@"CoreAnimation粒子动画1" subTitle:@"" image:@"" className:@"EmitterVC1" selector:@""],
-                           [self makeItemWithTitle:@"CoreAnimation粒子动画2" subTitle:@"" image:@"" className:@"EmitterVC2" selector:@""],
-                           [self makeItemWithTitle:@"CoreAnimation粒子动画3" subTitle:@"" image:@"" className:@"EmitterVC3" selector:@""],
-                           [self makeItemWithTitle:@"CoreAnimation粒子动画4" subTitle:@"" image:@"" className:@"EmitterVC4" selector:@""],
+    //[self makeItemWithTitle:@"GPUImage初探" subTitle:@"" image:@"" className:@"GPUImageExampleVC" selector:@""],
 
-                           [self makeItemWithTitle:@"GLSL加载图片" subTitle:@"" image:@"" className:@"CubeViewController" selector:@""],
-                           [self makeItemWithTitle:@"GLSL三角形变换" subTitle:@"" image:@"" className:@"GLSLTriangleTransformVC" selector:@""],
-                           [self makeItemWithTitle:@"滤镜效果" subTitle:@"" image:@"" className:@"FilterViewController" selector:@""],
-                           [self makeItemWithTitle:@"GPUImage初探" subTitle:@"" image:@"" className:@"GPUImageExampleVC" selector:@""],
-                                                      [self makeItemWithTitle:@"GPUImage初探" subTitle:@"" image:@"" className:@"GPUPhotoVC" selector:@""],
+    NSArray *arr1 = @[
+        [self makeItemWithTitle:@"CoreAnimation粒子动画1" subTitle:@"" image:@"" className:@"EmitterVC1" selector:@""],
+        [self makeItemWithTitle:@"CoreAnimation粒子动画2" subTitle:@"" image:@"" className:@"EmitterVC2" selector:@""],
+        [self makeItemWithTitle:@"CoreAnimation粒子动画3" subTitle:@"" image:@"" className:@"EmitterVC3" selector:@""],
+        [self makeItemWithTitle:@"CoreAnimation粒子动画4" subTitle:@"" image:@"" className:@"EmitterVC4" selector:@""],
+    ];
 
-                           //                           [self makeItemWithTitle:@"GPUImage初探" subTitle:@"" image:@"" className:@"GPUImageExampleVC" selector:@""],
+    NSArray *arr2 = @[
+        [self makeItemWithTitle:@"GLSL加载图片" subTitle:@"" image:@"" className:@"CubeViewController" selector:@""],
+        [self makeItemWithTitle:@"GLSL三角形变换" subTitle:@"" image:@"" className:@"GLSLTriangleTransformVC" selector:@""],
+        [self makeItemWithTitle:@"滤镜效果" subTitle:@"" image:@"" className:@"FilterViewController" selector:@""],
+        [self makeItemWithTitle:@"GPUImage初探" subTitle:@"" image:@"" className:@"GPUImageExampleVC" selector:@""],
+        [self makeItemWithTitle:@"GPUImage初探" subTitle:@"" image:@"" className:@"GPUPhotoVC" selector:@""],
+    ];
 
-                           //                           [self makeItemWithTitle:@"GPUImage初探" subTitle:@"" image:@"" className:@"GPUImageExampleVC" selector:@""],
+    self.dataSource = [@[arr1, arr2] mutableCopy];
+}
 
-                           //                           [self makeItemWithTitle:@"GPUImage初探" subTitle:@"" image:@"" className:@"GPUImageExampleVC" selector:@""],
-
-                       ] mutableCopy];
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return self.dataSource.count;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.dataSource.count;
+    NSArray *arr = self.dataSource[section];
+    return arr.count;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
+    if (section == self.dataSource.count - 1) return 0.0;
+    return 30.0;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
-    NSDictionary *item = self.dataSource[indexPath.row];
+
+    NSArray *arr = self.dataSource[indexPath.section];
+
+    NSDictionary *item = arr[indexPath.row];
     cell.textLabel.text = item[@"title"];
     cell.detailTextLabel.text = item[@"subTitle"];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
@@ -57,7 +69,8 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSDictionary *item = self.dataSource[indexPath.row];
+    NSArray *arr = self.dataSource[indexPath.section];
+    NSDictionary *item = arr[indexPath.row];
 
     if ([item[@"selector"] length] > 0 && [self respondsToSelector:NSSelectorFromString(item[@"selector"])]) {
         SEL selector = NSSelectorFromString(item[@"selector"]);

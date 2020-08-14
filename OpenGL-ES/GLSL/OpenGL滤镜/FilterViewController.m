@@ -388,7 +388,7 @@ typedef struct {
     filterBar.delegate = self;
     [self.view addSubview:filterBar];
     self.dataSource = [@[@"splitScreen_normal", @"scale", @"soul", @"shake", @"shakeWhite", @"glitch", @"vertigos", @"gray", @"reversal", @"mosaic_square", @"mosaic_hexagon", @"mosaic_triangle", @"splitScreen_2", @"splitScreen_3", @"splitScreen_4", @"splitScreen_6", @"splitScreen_9"] mutableCopy];
-    filterBar.itemList = @[@"无", @"缩放", @"灵魂出窍", @"抖动", @"闪白", @"毛刺", @"幻觉", @"灰度", @"翻转", @"马赛克1", @"马赛克1", @"马赛克1", @"2分屏", @"3分屏", @"4分屏", @"6分屏", @"9分屏"];
+    filterBar.itemList = @[@"无", @"缩放", @"灵魂出窍", @"抖动", @"闪白", @"毛刺", @"幻觉", @"灰度", @"翻转", @"马赛克1", @"马赛克2", @"马赛克3", @"2分屏", @"3分屏", @"4分屏", @"6分屏", @"9分屏"];
 }
 
 //获取渲染缓存区的宽
