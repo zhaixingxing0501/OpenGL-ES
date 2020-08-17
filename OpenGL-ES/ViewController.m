@@ -22,8 +22,7 @@
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
     self.tableView.tableFooterView = [UIView new];
 
-    //[self makeItemWithTitle:@"GPUImage初探" subTitle:@"" image:@"" className:@"GPUImageExampleVC" selector:@""],
-
+    
     NSArray *arr1 = @[
         [self makeItemWithTitle:@"CoreAnimation粒子动画1" subTitle:@"" image:@"" className:@"EmitterVC1" selector:@""],
         [self makeItemWithTitle:@"CoreAnimation粒子动画2" subTitle:@"" image:@"" className:@"EmitterVC2" selector:@""],
@@ -35,6 +34,7 @@
         [self makeItemWithTitle:@"GLSL加载图片" subTitle:@"" image:@"" className:@"CubeViewController" selector:@""],
         [self makeItemWithTitle:@"GLSL三角形变换" subTitle:@"" image:@"" className:@"GLSLTriangleTransformVC" selector:@""],
         [self makeItemWithTitle:@"滤镜效果" subTitle:@"" image:@"" className:@"FilterViewController" selector:@""],
+        [self makeItemWithTitle:@"长腿滤镜" subTitle:@"" image:@"" className:@"LongLegsVC" selector:@""],
         [self makeItemWithTitle:@"GPUImage初探" subTitle:@"" image:@"" className:@"GPUImageExampleVC" selector:@""],
         [self makeItemWithTitle:@"GPUImage初探" subTitle:@"" image:@"" className:@"GPUPhotoVC" selector:@""],
     ];

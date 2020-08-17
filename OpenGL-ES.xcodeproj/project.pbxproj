@@ -66,6 +66,9 @@
 		9C8F5B2A24DAA187009790F5 /* zongzi2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9C8F5B2624DAA186009790F5 /* zongzi2.jpg */; };
 		9C8F5B2B24DAA187009790F5 /* zongzi.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C8F5B2724DAA186009790F5 /* zongzi.png */; };
 		9C8F5B2C24DAA187009790F5 /* jinbi.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C8F5B2824DAA187009790F5 /* jinbi.png */; };
+		9CA23EF024EA229100816CC9 /* LongLegsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA23EEE24EA229100816CC9 /* LongLegsVC.m */; };
+		9CA23EF124EA229100816CC9 /* LongLegsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CA23EEF24EA229100816CC9 /* LongLegsVC.xib */; };
+		9CA23EF424EA232B00816CC9 /* LongLegsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA23EF324EA232B00816CC9 /* LongLegsView.m */; };
 		9CACF70624E245A300CB35E4 /* mosaic_triangle.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 9CACF6FC24E245A200CB35E4 /* mosaic_triangle.vsh */; };
 		9CACF70724E245A300CB35E4 /* reversal.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 9CACF6FD24E245A200CB35E4 /* reversal.vsh */; };
 		9CACF70824E245A300CB35E4 /* mosaic_square.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 9CACF6FE24E245A200CB35E4 /* mosaic_square.fsh */; };
@@ -168,6 +171,11 @@
 		9C8F5B2624DAA186009790F5 /* zongzi2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = zongzi2.jpg; sourceTree = "<group>"; };
 		9C8F5B2724DAA186009790F5 /* zongzi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zongzi.png; sourceTree = "<group>"; };
 		9C8F5B2824DAA187009790F5 /* jinbi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jinbi.png; sourceTree = "<group>"; };
+		9CA23EED24EA229100816CC9 /* LongLegsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LongLegsVC.h; sourceTree = "<group>"; };
+		9CA23EEE24EA229100816CC9 /* LongLegsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LongLegsVC.m; sourceTree = "<group>"; };
+		9CA23EEF24EA229100816CC9 /* LongLegsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LongLegsVC.xib; sourceTree = "<group>"; };
+		9CA23EF224EA232B00816CC9 /* LongLegsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LongLegsView.h; sourceTree = "<group>"; };
+		9CA23EF324EA232B00816CC9 /* LongLegsView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LongLegsView.m; sourceTree = "<group>"; };
 		9CACF6FC24E245A200CB35E4 /* mosaic_triangle.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = mosaic_triangle.vsh; sourceTree = "<group>"; };
 		9CACF6FD24E245A200CB35E4 /* reversal.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = reversal.vsh; sourceTree = "<group>"; };
 		9CACF6FE24E245A200CB35E4 /* mosaic_square.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = mosaic_square.fsh; sourceTree = "<group>"; };
@@ -337,6 +345,7 @@
 		9C8C7C5424DBA6F900486AE4 /* GLSL */ = {
 			isa = PBXGroup;
 			children = (
+				9CA23EEC24EA224700816CC9 /* 长腿滤镜 */,
 				9C3B216624E11E98006EEC23 /* OpenGL滤镜 */,
 				9C8C7C5524DBA71800486AE4 /* GLSL 三角形变换 */,
 				9C092E8A24D17A9D00E4346A /* GLSL加载图片 */,
@@ -394,6 +403,18 @@
 				9C8F5B2624DAA186009790F5 /* zongzi2.jpg */,
 			);
 			path = "CoreAnimation粒子特效";
+			sourceTree = "<group>";
+		};
+		9CA23EEC24EA224700816CC9 /* 长腿滤镜 */ = {
+			isa = PBXGroup;
+			children = (
+				9CA23EED24EA229100816CC9 /* LongLegsVC.h */,
+				9CA23EEE24EA229100816CC9 /* LongLegsVC.m */,
+				9CA23EEF24EA229100816CC9 /* LongLegsVC.xib */,
+				9CA23EF224EA232B00816CC9 /* LongLegsView.h */,
+				9CA23EF324EA232B00816CC9 /* LongLegsView.m */,
+			);
+			path = "长腿滤镜";
 			sourceTree = "<group>";
 		};
 		DC56E4BBA8CDEE437A82154B /* Frameworks */ = {
@@ -519,6 +540,7 @@
 				CE54D5E224D4046F00DAEEF2 /* shaderv.glsl in Resources */,
 				9C8C7C4B24DB9D1B00486AE4 /* EmitterVC3.xib in Resources */,
 				9CACF70D24E245A300CB35E4 /* mosaic_hexagon.vsh in Resources */,
+				9CA23EF124EA229100816CC9 /* LongLegsVC.xib in Resources */,
 				9C3B218C24E11F84006EEC23 /* splitScreen_6.vsh in Resources */,
 				9C3B218924E11F84006EEC23 /* splitScreen_3.vsh in Resources */,
 				9C3B218B24E11F84006EEC23 /* splitScreen_4.vsh in Resources */,
@@ -578,6 +600,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C8C7C4A24DB9D1B00486AE4 /* EmitterVC3.m in Sources */,
+				9CA23EF024EA229100816CC9 /* LongLegsVC.m in Sources */,
 				9C8C7C4624DB951800486AE4 /* EmitterVC2.m in Sources */,
 				9C8C7C6824DBA83400486AE4 /* GLESUtils.m in Sources */,
 				CE54D5DE24D4041600DAEEF2 /* CubeView.m in Sources */,
@@ -593,6 +616,7 @@
 				9CACF73924E285E700CB35E4 /* GPUPhotoVC.m in Sources */,
 				9C3B219324E11FC6006EEC23 /* FilterBarCell.m in Sources */,
 				9C8C7C6024DBA7BD00486AE4 /* TriangleTransformView.m in Sources */,
+				9CA23EF424EA232B00816CC9 /* LongLegsView.m in Sources */,
 				9C092E6C24D176D500E4346A /* AppDelegate.m in Sources */,
 				9C8F5B2424DAA137009790F5 /* EmitterVC1.m in Sources */,
 				9C092E7D24D176D700E4346A /* main.m in Sources */,
