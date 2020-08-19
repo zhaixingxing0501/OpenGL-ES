@@ -33,7 +33,6 @@
 		9C3B219C24E12ADD006EEC23 /* img3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9C3B219B24E12ADD006EEC23 /* img3.jpg */; };
 		9C3B219F24E12BB6006EEC23 /* splitScreen_2.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 9C3B219D24E12BB6006EEC23 /* splitScreen_2.fsh */; };
 		9C3B21A024E12BB6006EEC23 /* splitScreen_2.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 9C3B219E24E12BB6006EEC23 /* splitScreen_2.vsh */; };
-		9C3B21A424E138FF006EEC23 /* GPUImageExampleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3B21A324E138FF006EEC23 /* GPUImageExampleVC.m */; };
 		9C3B21A624E13FF7006EEC23 /* img4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9C3B21A524E13FF7006EEC23 /* img4.jpg */; };
 		9C8C7C4624DB951800486AE4 /* EmitterVC2.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C8C7C4524DB951800486AE4 /* EmitterVC2.m */; };
 		9C8C7C4A24DB9D1B00486AE4 /* EmitterVC3.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C8C7C4824DB9D1B00486AE4 /* EmitterVC3.m */; };
@@ -69,6 +68,15 @@
 		9CA23EF024EA229100816CC9 /* LongLegsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA23EEE24EA229100816CC9 /* LongLegsVC.m */; };
 		9CA23EF124EA229100816CC9 /* LongLegsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CA23EEF24EA229100816CC9 /* LongLegsVC.xib */; };
 		9CA23EF424EA232B00816CC9 /* LongLegsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA23EF324EA232B00816CC9 /* LongLegsView.m */; };
+		9CA23EFD24EB64C400816CC9 /* GPUImagePhotoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA23EFB24EB64C400816CC9 /* GPUImagePhotoVC.m */; };
+		9CA23EFE24EB64C400816CC9 /* GPUImagePhotoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CA23EFC24EB64C400816CC9 /* GPUImagePhotoVC.xib */; };
+		9CA23F0224EB64D700816CC9 /* GPUImageVideoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA23F0024EB64D700816CC9 /* GPUImageVideoVC.m */; };
+		9CA23F0324EB64D700816CC9 /* GPUImageVideoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CA23F0124EB64D700816CC9 /* GPUImageVideoVC.xib */; };
+		9CA23F0524EB678000816CC9 /* img5.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9CA23F0424EB678000816CC9 /* img5.jpeg */; };
+		9CA23F0924EB6A8B00816CC9 /* GPUImagePhotosVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA23F0724EB6A8B00816CC9 /* GPUImagePhotosVC.m */; };
+		9CA23F0A24EB6A8B00816CC9 /* GPUImagePhotosVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CA23F0824EB6A8B00816CC9 /* GPUImagePhotosVC.xib */; };
+		9CA23F1124EB73D700816CC9 /* TKAlertCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA23F0D24EB73D700816CC9 /* TKAlertCenter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9CA23F1224EB73D700816CC9 /* UIView+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA23F0E24EB73D700816CC9 /* UIView+TKCategory.m */; };
 		9CACF70624E245A300CB35E4 /* mosaic_triangle.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 9CACF6FC24E245A200CB35E4 /* mosaic_triangle.vsh */; };
 		9CACF70724E245A300CB35E4 /* reversal.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 9CACF6FD24E245A200CB35E4 /* reversal.vsh */; };
 		9CACF70824E245A300CB35E4 /* mosaic_square.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 9CACF6FE24E245A200CB35E4 /* mosaic_square.fsh */; };
@@ -80,8 +88,7 @@
 		9CACF70E24E245A300CB35E4 /* mosaic_hexagon.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 9CACF70424E245A200CB35E4 /* mosaic_hexagon.fsh */; };
 		9CACF70F24E245A300CB35E4 /* reversal.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 9CACF70524E245A300CB35E4 /* reversal.fsh */; };
 		9CACF71324E24E4900CB35E4 /* GLSL注释讲解.md in Resources */ = {isa = PBXBuildFile; fileRef = 9CACF71224E24E4900CB35E4 /* GLSL注释讲解.md */; };
-		9CACF73124E2846900CB35E4 /* WID-small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9CACF72F24E2846900CB35E4 /* WID-small.jpg */; };
-		9CACF73924E285E700CB35E4 /* GPUPhotoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CACF73724E285E700CB35E4 /* GPUPhotoVC.m */; };
+		9CF51DFD24ECF5520099E393 /* VideoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CF51DFC24ECF5520099E393 /* VideoManager.m */; };
 		CE54D5DE24D4041600DAEEF2 /* CubeView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE54D5DD24D4041600DAEEF2 /* CubeView.m */; };
 		CE54D5E024D4046100DAEEF2 /* shaderf.glsl in Resources */ = {isa = PBXBuildFile; fileRef = CE54D5DF24D4046100DAEEF2 /* shaderf.glsl */; };
 		CE54D5E224D4046F00DAEEF2 /* shaderv.glsl in Resources */ = {isa = PBXBuildFile; fileRef = CE54D5E124D4046F00DAEEF2 /* shaderv.glsl */; };
@@ -126,8 +133,6 @@
 		9C3B219B24E12ADD006EEC23 /* img3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img3.jpg; sourceTree = "<group>"; };
 		9C3B219D24E12BB6006EEC23 /* splitScreen_2.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = splitScreen_2.fsh; sourceTree = "<group>"; };
 		9C3B219E24E12BB6006EEC23 /* splitScreen_2.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = splitScreen_2.vsh; sourceTree = "<group>"; };
-		9C3B21A224E138FF006EEC23 /* GPUImageExampleVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPUImageExampleVC.h; sourceTree = "<group>"; };
-		9C3B21A324E138FF006EEC23 /* GPUImageExampleVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPUImageExampleVC.m; sourceTree = "<group>"; };
 		9C3B21A524E13FF7006EEC23 /* img4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img4.jpg; sourceTree = "<group>"; };
 		9C8C7C4424DB951800486AE4 /* EmitterVC2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmitterVC2.h; sourceTree = "<group>"; };
 		9C8C7C4524DB951800486AE4 /* EmitterVC2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmitterVC2.m; sourceTree = "<group>"; };
@@ -176,6 +181,20 @@
 		9CA23EEF24EA229100816CC9 /* LongLegsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LongLegsVC.xib; sourceTree = "<group>"; };
 		9CA23EF224EA232B00816CC9 /* LongLegsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LongLegsView.h; sourceTree = "<group>"; };
 		9CA23EF324EA232B00816CC9 /* LongLegsView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LongLegsView.m; sourceTree = "<group>"; };
+		9CA23EFA24EB64C400816CC9 /* GPUImagePhotoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPUImagePhotoVC.h; sourceTree = "<group>"; };
+		9CA23EFB24EB64C400816CC9 /* GPUImagePhotoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPUImagePhotoVC.m; sourceTree = "<group>"; };
+		9CA23EFC24EB64C400816CC9 /* GPUImagePhotoVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GPUImagePhotoVC.xib; sourceTree = "<group>"; };
+		9CA23EFF24EB64D700816CC9 /* GPUImageVideoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPUImageVideoVC.h; sourceTree = "<group>"; };
+		9CA23F0024EB64D700816CC9 /* GPUImageVideoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPUImageVideoVC.m; sourceTree = "<group>"; };
+		9CA23F0124EB64D700816CC9 /* GPUImageVideoVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GPUImageVideoVC.xib; sourceTree = "<group>"; };
+		9CA23F0424EB678000816CC9 /* img5.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img5.jpeg; sourceTree = "<group>"; };
+		9CA23F0624EB6A8B00816CC9 /* GPUImagePhotosVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPUImagePhotosVC.h; sourceTree = "<group>"; };
+		9CA23F0724EB6A8B00816CC9 /* GPUImagePhotosVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPUImagePhotosVC.m; sourceTree = "<group>"; };
+		9CA23F0824EB6A8B00816CC9 /* GPUImagePhotosVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GPUImagePhotosVC.xib; sourceTree = "<group>"; };
+		9CA23F0D24EB73D700816CC9 /* TKAlertCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKAlertCenter.m; sourceTree = "<group>"; };
+		9CA23F0E24EB73D700816CC9 /* UIView+TKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TKCategory.m"; sourceTree = "<group>"; };
+		9CA23F0F24EB73D700816CC9 /* TKAlertCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKAlertCenter.h; sourceTree = "<group>"; };
+		9CA23F1024EB73D700816CC9 /* UIView+TKCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TKCategory.h"; sourceTree = "<group>"; };
 		9CACF6FC24E245A200CB35E4 /* mosaic_triangle.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = mosaic_triangle.vsh; sourceTree = "<group>"; };
 		9CACF6FD24E245A200CB35E4 /* reversal.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = reversal.vsh; sourceTree = "<group>"; };
 		9CACF6FE24E245A200CB35E4 /* mosaic_square.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = mosaic_square.fsh; sourceTree = "<group>"; };
@@ -187,9 +206,8 @@
 		9CACF70424E245A200CB35E4 /* mosaic_hexagon.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = mosaic_hexagon.fsh; sourceTree = "<group>"; };
 		9CACF70524E245A300CB35E4 /* reversal.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = reversal.fsh; sourceTree = "<group>"; };
 		9CACF71224E24E4900CB35E4 /* GLSL注释讲解.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "GLSL注释讲解.md"; sourceTree = "<group>"; };
-		9CACF72F24E2846900CB35E4 /* WID-small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "WID-small.jpg"; sourceTree = "<group>"; };
-		9CACF73624E285E700CB35E4 /* GPUPhotoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPUPhotoVC.h; sourceTree = "<group>"; };
-		9CACF73724E285E700CB35E4 /* GPUPhotoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPUPhotoVC.m; sourceTree = "<group>"; };
+		9CF51DFB24ECF5520099E393 /* VideoManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoManager.h; sourceTree = "<group>"; };
+		9CF51DFC24ECF5520099E393 /* VideoManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoManager.m; sourceTree = "<group>"; };
 		BD1A28A4E3180DE77EE15B31 /* Pods-OpenGL-ES.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenGL-ES.release.xcconfig"; path = "Target Support Files/Pods-OpenGL-ES/Pods-OpenGL-ES.release.xcconfig"; sourceTree = "<group>"; };
 		CE54D5DC24D4041600DAEEF2 /* CubeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CubeView.h; sourceTree = "<group>"; };
 		CE54D5DD24D4041600DAEEF2 /* CubeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CubeView.m; sourceTree = "<group>"; };
@@ -230,6 +248,7 @@
 		9C092E6924D176D500E4346A /* OpenGL-ES */ = {
 			isa = PBXGroup;
 			children = (
+				9CA23F0B24EB73A700816CC9 /* Vender */,
 				9C3B21A124E1376A006EEC23 /* GPUImage */,
 				9C8C7C5424DBA6F900486AE4 /* GLSL */,
 				9C8F5B2124DAA0B7009790F5 /* CoreAnimation粒子特效 */,
@@ -333,11 +352,18 @@
 		9C3B21A124E1376A006EEC23 /* GPUImage */ = {
 			isa = PBXGroup;
 			children = (
-				9CACF72F24E2846900CB35E4 /* WID-small.jpg */,
-				9C3B21A224E138FF006EEC23 /* GPUImageExampleVC.h */,
-				9C3B21A324E138FF006EEC23 /* GPUImageExampleVC.m */,
-				9CACF73624E285E700CB35E4 /* GPUPhotoVC.h */,
-				9CACF73724E285E700CB35E4 /* GPUPhotoVC.m */,
+				9CA23F0624EB6A8B00816CC9 /* GPUImagePhotosVC.h */,
+				9CA23F0724EB6A8B00816CC9 /* GPUImagePhotosVC.m */,
+				9CA23F0824EB6A8B00816CC9 /* GPUImagePhotosVC.xib */,
+				9CA23EFA24EB64C400816CC9 /* GPUImagePhotoVC.h */,
+				9CA23EFB24EB64C400816CC9 /* GPUImagePhotoVC.m */,
+				9CA23EFC24EB64C400816CC9 /* GPUImagePhotoVC.xib */,
+				9CA23EFF24EB64D700816CC9 /* GPUImageVideoVC.h */,
+				9CA23F0024EB64D700816CC9 /* GPUImageVideoVC.m */,
+				9CA23F0124EB64D700816CC9 /* GPUImageVideoVC.xib */,
+				9CF51DFB24ECF5520099E393 /* VideoManager.h */,
+				9CF51DFC24ECF5520099E393 /* VideoManager.m */,
+				9CA23F0424EB678000816CC9 /* img5.jpeg */,
 			);
 			path = GPUImage;
 			sourceTree = "<group>";
@@ -415,6 +441,25 @@
 				9CA23EF324EA232B00816CC9 /* LongLegsView.m */,
 			);
 			path = "长腿滤镜";
+			sourceTree = "<group>";
+		};
+		9CA23F0B24EB73A700816CC9 /* Vender */ = {
+			isa = PBXGroup;
+			children = (
+				9CA23F0C24EB73D700816CC9 /* TKAlertView */,
+			);
+			path = Vender;
+			sourceTree = "<group>";
+		};
+		9CA23F0C24EB73D700816CC9 /* TKAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				9CA23F0D24EB73D700816CC9 /* TKAlertCenter.m */,
+				9CA23F0E24EB73D700816CC9 /* UIView+TKCategory.m */,
+				9CA23F0F24EB73D700816CC9 /* TKAlertCenter.h */,
+				9CA23F1024EB73D700816CC9 /* UIView+TKCategory.h */,
+			);
+			path = TKAlertView;
 			sourceTree = "<group>";
 		};
 		DC56E4BBA8CDEE437A82154B /* Frameworks */ = {
@@ -505,6 +550,7 @@
 				9C8CBDAA24E623A4003AD0C8 /* scale.vsh in Resources */,
 				9C092E7724D176D700E4346A /* Assets.xcassets in Resources */,
 				9C8CBDAE24E623A5003AD0C8 /* shakeWhite.vsh in Resources */,
+				9CA23EFE24EB64C400816CC9 /* GPUImagePhotoVC.xib in Resources */,
 				9CACF70924E245A300CB35E4 /* gray.fsh in Resources */,
 				9CACF70A24E245A300CB35E4 /* mosaic_square.vsh in Resources */,
 				9C8C7C6B24DBB23100486AE4 /* shaderV1.glsl in Resources */,
@@ -515,16 +561,17 @@
 				9C3B218724E11F84006EEC23 /* splitScreen_9.vsh in Resources */,
 				9C3B218D24E11F84006EEC23 /* splitScreen_4.fsh in Resources */,
 				9CACF70824E245A300CB35E4 /* mosaic_square.fsh in Resources */,
+				9CA23F0524EB678000816CC9 /* img5.jpeg in Resources */,
 				9C092E7524D176D500E4346A /* Main.storyboard in Resources */,
 				9C3B21A624E13FF7006EEC23 /* img4.jpg in Resources */,
 				9CACF70C24E245A300CB35E4 /* gray.vsh in Resources */,
+				9CA23F0A24EB6A8B00816CC9 /* GPUImagePhotosVC.xib in Resources */,
 				9C3B219C24E12ADD006EEC23 /* img3.jpg in Resources */,
 				9CACF70724E245A300CB35E4 /* reversal.vsh in Resources */,
 				9CACF70F24E245A300CB35E4 /* reversal.fsh in Resources */,
 				9CACF70624E245A300CB35E4 /* mosaic_triangle.vsh in Resources */,
 				9C8CBDAB24E623A4003AD0C8 /* shakeWhite.fsh in Resources */,
 				9C8C7C5D24DBA77100486AE4 /* GLSLTriangleTransformVC.xib in Resources */,
-				9CACF73124E2846900CB35E4 /* WID-small.jpg in Resources */,
 				9C8CBDB124E623A5003AD0C8 /* scale.fsh in Resources */,
 				9C3B219A24E1295D006EEC23 /* splitScreen_normal.fsh in Resources */,
 				9C8F5B2924DAA187009790F5 /* hongbao.png in Resources */,
@@ -545,6 +592,7 @@
 				9C3B218924E11F84006EEC23 /* splitScreen_3.vsh in Resources */,
 				9C3B218B24E11F84006EEC23 /* splitScreen_4.vsh in Resources */,
 				9C8CBDB024E623A5003AD0C8 /* glitch.fsh in Resources */,
+				9CA23F0324EB64D700816CC9 /* GPUImageVideoVC.xib in Resources */,
 				9C8CBDAD24E623A5003AD0C8 /* shake.fsh in Resources */,
 				9C8CBDB324E623A5003AD0C8 /* shake.vsh in Resources */,
 			);
@@ -601,23 +649,27 @@
 			files = (
 				9C8C7C4A24DB9D1B00486AE4 /* EmitterVC3.m in Sources */,
 				9CA23EF024EA229100816CC9 /* LongLegsVC.m in Sources */,
+				9CA23EFD24EB64C400816CC9 /* GPUImagePhotoVC.m in Sources */,
 				9C8C7C4624DB951800486AE4 /* EmitterVC2.m in Sources */,
 				9C8C7C6824DBA83400486AE4 /* GLESUtils.m in Sources */,
+				9CA23F0224EB64D700816CC9 /* GPUImageVideoVC.m in Sources */,
 				CE54D5DE24D4041600DAEEF2 /* CubeView.m in Sources */,
+				9CA23F1224EB73D700816CC9 /* UIView+TKCategory.m in Sources */,
 				9C8C7C6924DBA83400486AE4 /* GLESMath.c in Sources */,
 				9C092E7224D176D500E4346A /* ViewController.m in Sources */,
 				9C092E8D24D17AC000E4346A /* CubeViewController.m in Sources */,
+				9CF51DFD24ECF5520099E393 /* VideoManager.m in Sources */,
+				9CA23F0924EB6A8B00816CC9 /* GPUImagePhotosVC.m in Sources */,
 				9C092E8524D178CE00E4346A /* BaseViewController.m in Sources */,
 				9C8C7C4F24DBA2DC00486AE4 /* EmitterVC4.m in Sources */,
 				9C8C7C5C24DBA77100486AE4 /* GLSLTriangleTransformVC.m in Sources */,
-				9C3B21A424E138FF006EEC23 /* GPUImageExampleVC.m in Sources */,
 				9C8C7C5324DBA35900486AE4 /* AnimationButton.m in Sources */,
 				9C3B219624E11FE8006EEC23 /* FilterViewController.m in Sources */,
-				9CACF73924E285E700CB35E4 /* GPUPhotoVC.m in Sources */,
 				9C3B219324E11FC6006EEC23 /* FilterBarCell.m in Sources */,
 				9C8C7C6024DBA7BD00486AE4 /* TriangleTransformView.m in Sources */,
 				9CA23EF424EA232B00816CC9 /* LongLegsView.m in Sources */,
 				9C092E6C24D176D500E4346A /* AppDelegate.m in Sources */,
+				9CA23F1124EB73D700816CC9 /* TKAlertCenter.m in Sources */,
 				9C8F5B2424DAA137009790F5 /* EmitterVC1.m in Sources */,
 				9C092E7D24D176D700E4346A /* main.m in Sources */,
 				9C3B219224E11FC6006EEC23 /* FilterBar.m in Sources */,

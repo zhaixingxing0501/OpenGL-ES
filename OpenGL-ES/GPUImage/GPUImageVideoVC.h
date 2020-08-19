@@ -1,8 +1,8 @@
 //
-//  GPUImageExampleVC.h
+//  GPUImageVideoVC.h
 //  OpenGL-ES
 //
-//  Created by nucarf on 2020/8/10.
+//  Created by nucarf on 2020/8/18.
 //  Copyright © 2020 zhaixingxing. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface GPUImageExampleVC : BaseViewController
+@interface GPUImageVideoVC : BaseViewController
 
 @end
 

@@ -35,8 +35,10 @@
         [self makeItemWithTitle:@"GLSL三角形变换" subTitle:@"" image:@"" className:@"GLSLTriangleTransformVC" selector:@""],
         [self makeItemWithTitle:@"滤镜效果" subTitle:@"" image:@"" className:@"FilterViewController" selector:@""],
         [self makeItemWithTitle:@"长腿滤镜" subTitle:@"" image:@"" className:@"LongLegsVC" selector:@""],
-        [self makeItemWithTitle:@"GPUImage初探" subTitle:@"" image:@"" className:@"GPUImageExampleVC" selector:@""],
-        [self makeItemWithTitle:@"GPUImage初探" subTitle:@"" image:@"" className:@"GPUPhotoVC" selector:@""],
+        [self makeItemWithTitle:@"GPUImage静态图片-饱和度滤镜" subTitle:@"" image:@"" className:@"GPUImagePhotoVC" selector:@""],
+        [self makeItemWithTitle:@"GPUImage拍照-灰度滤镜" subTitle:@"" image:@"" className:@"GPUImagePhotosVC" selector:@""],
+        [self makeItemWithTitle:@"GPUImage适配录制-饱和度滤镜" subTitle:@"" image:@"" className:@"GPUImageVideoVC" selector:@""],
+
     ];
 
     self.dataSource = [@[arr1, arr2] mutableCopy];
