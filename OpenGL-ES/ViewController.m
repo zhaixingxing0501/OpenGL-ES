@@ -22,15 +22,14 @@
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
     self.tableView.tableFooterView = [UIView new];
 
-    
-    NSArray *arr1 = @[
+    NSArray *CoreAnimationArr = @[
         [self makeItemWithTitle:@"CoreAnimation粒子动画1" subTitle:@"" image:@"" className:@"EmitterVC1" selector:@""],
         [self makeItemWithTitle:@"CoreAnimation粒子动画2" subTitle:@"" image:@"" className:@"EmitterVC2" selector:@""],
         [self makeItemWithTitle:@"CoreAnimation粒子动画3" subTitle:@"" image:@"" className:@"EmitterVC3" selector:@""],
         [self makeItemWithTitle:@"CoreAnimation粒子动画4" subTitle:@"" image:@"" className:@"EmitterVC4" selector:@""],
     ];
 
-    NSArray *arr2 = @[
+    NSArray *OpenGLArr = @[
         [self makeItemWithTitle:@"GLSL加载图片" subTitle:@"" image:@"" className:@"CubeViewController" selector:@""],
         [self makeItemWithTitle:@"GLSL三角形变换" subTitle:@"" image:@"" className:@"GLSLTriangleTransformVC" selector:@""],
         [self makeItemWithTitle:@"滤镜效果" subTitle:@"" image:@"" className:@"FilterViewController" selector:@""],
@@ -41,7 +40,13 @@
 
     ];
 
-    self.dataSource = [@[arr1, arr2] mutableCopy];
+    NSArray *MetalArr = @[
+        [self makeItemWithTitle:@"Hello Metal" subTitle:@"" image:@"" className:@"MetalExplorationVC" selector:@""],
+        [self makeItemWithTitle:@"Metal实现三角形" subTitle:@"" image:@"" className:@"MetalTriangleVC" selector:@""],
+
+    ];
+
+    self.dataSource = [@[CoreAnimationArr, OpenGLArr, MetalArr] mutableCopy];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {

@@ -89,6 +89,13 @@
 		9CACF70F24E245A300CB35E4 /* reversal.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 9CACF70524E245A300CB35E4 /* reversal.fsh */; };
 		9CACF71324E24E4900CB35E4 /* GLSL注释讲解.md in Resources */ = {isa = PBXBuildFile; fileRef = 9CACF71224E24E4900CB35E4 /* GLSL注释讲解.md */; };
 		9CF51DFD24ECF5520099E393 /* VideoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CF51DFC24ECF5520099E393 /* VideoManager.m */; };
+		9CF51E4F24EE08120099E393 /* MetalTriangleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CF51E4D24EE08120099E393 /* MetalTriangleVC.m */; };
+		9CF51E5024EE08120099E393 /* MetalTriangleVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CF51E4E24EE08120099E393 /* MetalTriangleVC.xib */; };
+		9CF51E5424EE085F0099E393 /* MetalExplorationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CF51E5224EE085F0099E393 /* MetalExplorationVC.m */; };
+		9CF51E5524EE085F0099E393 /* MetalExplorationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CF51E5324EE085F0099E393 /* MetalExplorationVC.xib */; };
+		9CF51E5924EE09950099E393 /* MetalExplorerRender.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CF51E5824EE09950099E393 /* MetalExplorerRender.m */; };
+		9CF51E5F24EE1A820099E393 /* TriangleRender.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CF51E5E24EE1A820099E393 /* TriangleRender.m */; };
+		9CF51E6324EE1E580099E393 /* TriangleShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 9CF51E6224EE1E580099E393 /* TriangleShader.metal */; };
 		CE54D5DE24D4041600DAEEF2 /* CubeView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE54D5DD24D4041600DAEEF2 /* CubeView.m */; };
 		CE54D5E024D4046100DAEEF2 /* shaderf.glsl in Resources */ = {isa = PBXBuildFile; fileRef = CE54D5DF24D4046100DAEEF2 /* shaderf.glsl */; };
 		CE54D5E224D4046F00DAEEF2 /* shaderv.glsl in Resources */ = {isa = PBXBuildFile; fileRef = CE54D5E124D4046F00DAEEF2 /* shaderv.glsl */; };
@@ -208,6 +215,18 @@
 		9CACF71224E24E4900CB35E4 /* GLSL注释讲解.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "GLSL注释讲解.md"; sourceTree = "<group>"; };
 		9CF51DFB24ECF5520099E393 /* VideoManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoManager.h; sourceTree = "<group>"; };
 		9CF51DFC24ECF5520099E393 /* VideoManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoManager.m; sourceTree = "<group>"; };
+		9CF51E4C24EE08120099E393 /* MetalTriangleVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MetalTriangleVC.h; sourceTree = "<group>"; };
+		9CF51E4D24EE08120099E393 /* MetalTriangleVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MetalTriangleVC.m; sourceTree = "<group>"; };
+		9CF51E4E24EE08120099E393 /* MetalTriangleVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MetalTriangleVC.xib; sourceTree = "<group>"; };
+		9CF51E5124EE085F0099E393 /* MetalExplorationVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MetalExplorationVC.h; sourceTree = "<group>"; };
+		9CF51E5224EE085F0099E393 /* MetalExplorationVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MetalExplorationVC.m; sourceTree = "<group>"; };
+		9CF51E5324EE085F0099E393 /* MetalExplorationVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MetalExplorationVC.xib; sourceTree = "<group>"; };
+		9CF51E5724EE09950099E393 /* MetalExplorerRender.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MetalExplorerRender.h; sourceTree = "<group>"; };
+		9CF51E5824EE09950099E393 /* MetalExplorerRender.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MetalExplorerRender.m; sourceTree = "<group>"; };
+		9CF51E5D24EE1A820099E393 /* TriangleRender.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TriangleRender.h; sourceTree = "<group>"; };
+		9CF51E5E24EE1A820099E393 /* TriangleRender.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TriangleRender.m; sourceTree = "<group>"; };
+		9CF51E6224EE1E580099E393 /* TriangleShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = TriangleShader.metal; sourceTree = "<group>"; };
+		9CF51E6524EE1E950099E393 /* TriangleShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TriangleShaderTypes.h; sourceTree = "<group>"; };
 		BD1A28A4E3180DE77EE15B31 /* Pods-OpenGL-ES.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenGL-ES.release.xcconfig"; path = "Target Support Files/Pods-OpenGL-ES/Pods-OpenGL-ES.release.xcconfig"; sourceTree = "<group>"; };
 		CE54D5DC24D4041600DAEEF2 /* CubeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CubeView.h; sourceTree = "<group>"; };
 		CE54D5DD24D4041600DAEEF2 /* CubeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CubeView.m; sourceTree = "<group>"; };
@@ -248,7 +267,8 @@
 		9C092E6924D176D500E4346A /* OpenGL-ES */ = {
 			isa = PBXGroup;
 			children = (
-				9CA23F0B24EB73A700816CC9 /* Vender */,
+				9CF51E4824EE07D70099E393 /* Metal */,
+				9CA23F0B24EB73A700816CC9 /* Vendor */,
 				9C3B21A124E1376A006EEC23 /* GPUImage */,
 				9C8C7C5424DBA6F900486AE4 /* GLSL */,
 				9C8F5B2124DAA0B7009790F5 /* CoreAnimation粒子特效 */,
@@ -443,12 +463,12 @@
 			path = "长腿滤镜";
 			sourceTree = "<group>";
 		};
-		9CA23F0B24EB73A700816CC9 /* Vender */ = {
+		9CA23F0B24EB73A700816CC9 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
 				9CA23F0C24EB73D700816CC9 /* TKAlertView */,
 			);
-			path = Vender;
+			path = Vendor;
 			sourceTree = "<group>";
 		};
 		9CA23F0C24EB73D700816CC9 /* TKAlertView */ = {
@@ -460,6 +480,49 @@
 				9CA23F1024EB73D700816CC9 /* UIView+TKCategory.h */,
 			);
 			path = TKAlertView;
+			sourceTree = "<group>";
+		};
+		9CF51E4824EE07D70099E393 /* Metal */ = {
+			isa = PBXGroup;
+			children = (
+				9CF51E5624EE09480099E393 /* Render */,
+				9CF51E5124EE085F0099E393 /* MetalExplorationVC.h */,
+				9CF51E5224EE085F0099E393 /* MetalExplorationVC.m */,
+				9CF51E5324EE085F0099E393 /* MetalExplorationVC.xib */,
+				9CF51E4C24EE08120099E393 /* MetalTriangleVC.h */,
+				9CF51E4D24EE08120099E393 /* MetalTriangleVC.m */,
+				9CF51E4E24EE08120099E393 /* MetalTriangleVC.xib */,
+			);
+			path = Metal;
+			sourceTree = "<group>";
+		};
+		9CF51E5624EE09480099E393 /* Render */ = {
+			isa = PBXGroup;
+			children = (
+				9CF51E6124EE1AA40099E393 /* 三角形 */,
+				9CF51E6024EE1A8D0099E393 /* HelloMetal */,
+			);
+			path = Render;
+			sourceTree = "<group>";
+		};
+		9CF51E6024EE1A8D0099E393 /* HelloMetal */ = {
+			isa = PBXGroup;
+			children = (
+				9CF51E5724EE09950099E393 /* MetalExplorerRender.h */,
+				9CF51E5824EE09950099E393 /* MetalExplorerRender.m */,
+			);
+			path = HelloMetal;
+			sourceTree = "<group>";
+		};
+		9CF51E6124EE1AA40099E393 /* 三角形 */ = {
+			isa = PBXGroup;
+			children = (
+				9CF51E5D24EE1A820099E393 /* TriangleRender.h */,
+				9CF51E5E24EE1A820099E393 /* TriangleRender.m */,
+				9CF51E6224EE1E580099E393 /* TriangleShader.metal */,
+				9CF51E6524EE1E950099E393 /* TriangleShaderTypes.h */,
+			);
+			path = "三角形";
 			sourceTree = "<group>";
 		};
 		DC56E4BBA8CDEE437A82154B /* Frameworks */ = {
@@ -550,12 +613,14 @@
 				9C8CBDAA24E623A4003AD0C8 /* scale.vsh in Resources */,
 				9C092E7724D176D700E4346A /* Assets.xcassets in Resources */,
 				9C8CBDAE24E623A5003AD0C8 /* shakeWhite.vsh in Resources */,
+				9CF51E5524EE085F0099E393 /* MetalExplorationVC.xib in Resources */,
 				9CA23EFE24EB64C400816CC9 /* GPUImagePhotoVC.xib in Resources */,
 				9CACF70924E245A300CB35E4 /* gray.fsh in Resources */,
 				9CACF70A24E245A300CB35E4 /* mosaic_square.vsh in Resources */,
 				9C8C7C6B24DBB23100486AE4 /* shaderV1.glsl in Resources */,
 				9C8CBDA924E623A4003AD0C8 /* soul.vsh in Resources */,
 				9C8C7C6D24DBB23F00486AE4 /* shaderF1.glsl in Resources */,
+				9CF51E5024EE08120099E393 /* MetalTriangleVC.xib in Resources */,
 				9C3B218824E11F84006EEC23 /* splitScreen_9.fsh in Resources */,
 				9C8CBDAC24E623A5003AD0C8 /* soul.fsh in Resources */,
 				9C3B218724E11F84006EEC23 /* splitScreen_9.vsh in Resources */,
@@ -648,6 +713,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C8C7C4A24DB9D1B00486AE4 /* EmitterVC3.m in Sources */,
+				9CF51E5F24EE1A820099E393 /* TriangleRender.m in Sources */,
 				9CA23EF024EA229100816CC9 /* LongLegsVC.m in Sources */,
 				9CA23EFD24EB64C400816CC9 /* GPUImagePhotoVC.m in Sources */,
 				9C8C7C4624DB951800486AE4 /* EmitterVC2.m in Sources */,
@@ -657,10 +723,12 @@
 				9CA23F1224EB73D700816CC9 /* UIView+TKCategory.m in Sources */,
 				9C8C7C6924DBA83400486AE4 /* GLESMath.c in Sources */,
 				9C092E7224D176D500E4346A /* ViewController.m in Sources */,
+				9CF51E5924EE09950099E393 /* MetalExplorerRender.m in Sources */,
 				9C092E8D24D17AC000E4346A /* CubeViewController.m in Sources */,
 				9CF51DFD24ECF5520099E393 /* VideoManager.m in Sources */,
 				9CA23F0924EB6A8B00816CC9 /* GPUImagePhotosVC.m in Sources */,
 				9C092E8524D178CE00E4346A /* BaseViewController.m in Sources */,
+				9CF51E6324EE1E580099E393 /* TriangleShader.metal in Sources */,
 				9C8C7C4F24DBA2DC00486AE4 /* EmitterVC4.m in Sources */,
 				9C8C7C5C24DBA77100486AE4 /* GLSLTriangleTransformVC.m in Sources */,
 				9C8C7C5324DBA35900486AE4 /* AnimationButton.m in Sources */,
@@ -668,6 +736,8 @@
 				9C3B219324E11FC6006EEC23 /* FilterBarCell.m in Sources */,
 				9C8C7C6024DBA7BD00486AE4 /* TriangleTransformView.m in Sources */,
 				9CA23EF424EA232B00816CC9 /* LongLegsView.m in Sources */,
+				9CF51E4F24EE08120099E393 /* MetalTriangleVC.m in Sources */,
+				9CF51E5424EE085F0099E393 /* MetalExplorationVC.m in Sources */,
 				9C092E6C24D176D500E4346A /* AppDelegate.m in Sources */,
 				9CA23F1124EB73D700816CC9 /* TKAlertCenter.m in Sources */,
 				9C8F5B2424DAA137009790F5 /* EmitterVC1.m in Sources */,
