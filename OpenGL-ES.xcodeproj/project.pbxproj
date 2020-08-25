@@ -65,6 +65,12 @@
 		9C8F5B2A24DAA187009790F5 /* zongzi2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9C8F5B2624DAA186009790F5 /* zongzi2.jpg */; };
 		9C8F5B2B24DAA187009790F5 /* zongzi.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C8F5B2724DAA186009790F5 /* zongzi.png */; };
 		9C8F5B2C24DAA187009790F5 /* jinbi.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C8F5B2824DAA187009790F5 /* jinbi.png */; };
+		9CA21E4824F4A07B009B1836 /* BasicTexture.metal in Sources */ = {isa = PBXBuildFile; fileRef = 9CA21E4724F4A07B009B1836 /* BasicTexture.metal */; };
+		9CA21E4C24F4A0C9009B1836 /* TGAImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA21E4B24F4A0C9009B1836 /* TGAImage.m */; };
+		9CA21E5024F4A149009B1836 /* TextureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA21E4E24F4A149009B1836 /* TextureViewController.m */; };
+		9CA21E5124F4A149009B1836 /* TextureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CA21E4F24F4A149009B1836 /* TextureViewController.xib */; };
+		9CA21E5424F4A257009B1836 /* BasicTextureRender.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA21E5324F4A257009B1836 /* BasicTextureRender.m */; };
+		9CA21E5624F4ABFF009B1836 /* Image.tga in Resources */ = {isa = PBXBuildFile; fileRef = 9CA21E5524F4ABFF009B1836 /* Image.tga */; };
 		9CA23EF024EA229100816CC9 /* LongLegsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA23EEE24EA229100816CC9 /* LongLegsVC.m */; };
 		9CA23EF124EA229100816CC9 /* LongLegsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CA23EEF24EA229100816CC9 /* LongLegsVC.xib */; };
 		9CA23EF424EA232B00816CC9 /* LongLegsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA23EF324EA232B00816CC9 /* LongLegsView.m */; };
@@ -183,6 +189,16 @@
 		9C8F5B2624DAA186009790F5 /* zongzi2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = zongzi2.jpg; sourceTree = "<group>"; };
 		9C8F5B2724DAA186009790F5 /* zongzi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zongzi.png; sourceTree = "<group>"; };
 		9C8F5B2824DAA187009790F5 /* jinbi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jinbi.png; sourceTree = "<group>"; };
+		9CA21E4724F4A07B009B1836 /* BasicTexture.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = BasicTexture.metal; sourceTree = "<group>"; };
+		9CA21E4924F4A097009B1836 /* BasicTextureTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BasicTextureTypes.h; sourceTree = "<group>"; };
+		9CA21E4A24F4A0C9009B1836 /* TGAImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGAImage.h; sourceTree = "<group>"; };
+		9CA21E4B24F4A0C9009B1836 /* TGAImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGAImage.m; sourceTree = "<group>"; };
+		9CA21E4D24F4A149009B1836 /* TextureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextureViewController.h; sourceTree = "<group>"; };
+		9CA21E4E24F4A149009B1836 /* TextureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextureViewController.m; sourceTree = "<group>"; };
+		9CA21E4F24F4A149009B1836 /* TextureViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextureViewController.xib; sourceTree = "<group>"; };
+		9CA21E5224F4A257009B1836 /* BasicTextureRender.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BasicTextureRender.h; sourceTree = "<group>"; };
+		9CA21E5324F4A257009B1836 /* BasicTextureRender.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BasicTextureRender.m; sourceTree = "<group>"; };
+		9CA21E5524F4ABFF009B1836 /* Image.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Image.tga; sourceTree = "<group>"; };
 		9CA23EED24EA229100816CC9 /* LongLegsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LongLegsVC.h; sourceTree = "<group>"; };
 		9CA23EEE24EA229100816CC9 /* LongLegsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LongLegsVC.m; sourceTree = "<group>"; };
 		9CA23EEF24EA229100816CC9 /* LongLegsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LongLegsVC.xib; sourceTree = "<group>"; };
@@ -451,6 +467,20 @@
 			path = "CoreAnimation粒子特效";
 			sourceTree = "<group>";
 		};
+		9CA21E4524F49FE8009B1836 /* 加载纹理TGA_JPG */ = {
+			isa = PBXGroup;
+			children = (
+				9CA21E5524F4ABFF009B1836 /* Image.tga */,
+				9CA21E4724F4A07B009B1836 /* BasicTexture.metal */,
+				9CA21E4924F4A097009B1836 /* BasicTextureTypes.h */,
+				9CA21E5224F4A257009B1836 /* BasicTextureRender.h */,
+				9CA21E5324F4A257009B1836 /* BasicTextureRender.m */,
+				9CA21E4A24F4A0C9009B1836 /* TGAImage.h */,
+				9CA21E4B24F4A0C9009B1836 /* TGAImage.m */,
+			);
+			path = "加载纹理TGA_JPG";
+			sourceTree = "<group>";
+		};
 		9CA23EEC24EA224700816CC9 /* 长腿滤镜 */ = {
 			isa = PBXGroup;
 			children = (
@@ -492,6 +522,9 @@
 				9CF51E4C24EE08120099E393 /* MetalTriangleVC.h */,
 				9CF51E4D24EE08120099E393 /* MetalTriangleVC.m */,
 				9CF51E4E24EE08120099E393 /* MetalTriangleVC.xib */,
+				9CA21E4D24F4A149009B1836 /* TextureViewController.h */,
+				9CA21E4E24F4A149009B1836 /* TextureViewController.m */,
+				9CA21E4F24F4A149009B1836 /* TextureViewController.xib */,
 			);
 			path = Metal;
 			sourceTree = "<group>";
@@ -499,6 +532,7 @@
 		9CF51E5624EE09480099E393 /* Render */ = {
 			isa = PBXGroup;
 			children = (
+				9CA21E4524F49FE8009B1836 /* 加载纹理TGA_JPG */,
 				9CF51E6124EE1AA40099E393 /* 三角形 */,
 				9CF51E6024EE1A8D0099E393 /* HelloMetal */,
 			);
@@ -610,11 +644,13 @@
 				9C8CBDB224E623A5003AD0C8 /* vertigos.fsh in Resources */,
 				9C8C7C5024DBA2DC00486AE4 /* EmitterVC4.xib in Resources */,
 				9C092E7A24D176D700E4346A /* LaunchScreen.storyboard in Resources */,
+				9CA21E5624F4ABFF009B1836 /* Image.tga in Resources */,
 				9C8CBDAA24E623A4003AD0C8 /* scale.vsh in Resources */,
 				9C092E7724D176D700E4346A /* Assets.xcassets in Resources */,
 				9C8CBDAE24E623A5003AD0C8 /* shakeWhite.vsh in Resources */,
 				9CF51E5524EE085F0099E393 /* MetalExplorationVC.xib in Resources */,
 				9CA23EFE24EB64C400816CC9 /* GPUImagePhotoVC.xib in Resources */,
+				9CA21E5124F4A149009B1836 /* TextureViewController.xib in Resources */,
 				9CACF70924E245A300CB35E4 /* gray.fsh in Resources */,
 				9CACF70A24E245A300CB35E4 /* mosaic_square.vsh in Resources */,
 				9C8C7C6B24DBB23100486AE4 /* shaderV1.glsl in Resources */,
@@ -712,10 +748,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CA21E4C24F4A0C9009B1836 /* TGAImage.m in Sources */,
 				9C8C7C4A24DB9D1B00486AE4 /* EmitterVC3.m in Sources */,
+				9CA21E5024F4A149009B1836 /* TextureViewController.m in Sources */,
 				9CF51E5F24EE1A820099E393 /* TriangleRender.m in Sources */,
 				9CA23EF024EA229100816CC9 /* LongLegsVC.m in Sources */,
 				9CA23EFD24EB64C400816CC9 /* GPUImagePhotoVC.m in Sources */,
+				9CA21E5424F4A257009B1836 /* BasicTextureRender.m in Sources */,
 				9C8C7C4624DB951800486AE4 /* EmitterVC2.m in Sources */,
 				9C8C7C6824DBA83400486AE4 /* GLESUtils.m in Sources */,
 				9CA23F0224EB64D700816CC9 /* GPUImageVideoVC.m in Sources */,
@@ -744,6 +783,7 @@
 				9C092E7D24D176D700E4346A /* main.m in Sources */,
 				9C3B219224E11FC6006EEC23 /* FilterBar.m in Sources */,
 				9C092E6F24D176D500E4346A /* SceneDelegate.m in Sources */,
+				9CA21E4824F4A07B009B1836 /* BasicTexture.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

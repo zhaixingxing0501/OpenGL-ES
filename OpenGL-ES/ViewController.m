@@ -43,6 +43,7 @@
     NSArray *MetalArr = @[
         [self makeItemWithTitle:@"Hello Metal" subTitle:@"" image:@"" className:@"MetalExplorationVC" selector:@""],
         [self makeItemWithTitle:@"Metal实现三角形" subTitle:@"" image:@"" className:@"MetalTriangleVC" selector:@""],
+            [self makeItemWithTitle:@"Metal加载TGA/JPG图片" subTitle:@"" image:@"" className:@"TextureViewController" selector:@""],
 
     ];
 

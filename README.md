@@ -41,6 +41,7 @@ GLSL注释文件 : /OpenGL-ES/GLSL/OpenGL滤镜/GLSL注释讲解.md
 
 -------
 
-## 二、Metal
+## 三、Metal
 1. Hello Metal 初始
 2. Metal实现三角形
+3. Metal加载TGA/JPG图片
