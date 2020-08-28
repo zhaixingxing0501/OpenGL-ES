@@ -114,6 +114,10 @@ typedef struct {
         NSAssert(YES, @"renderPassDesriptor create failed");
     }
 
+    if (!renderPassDesriptor) {
+        
+    }
+    
     //6.通过渲染描述符renderPassDescriptor创建MTLRenderCommandEncoder 对象
     id<MTLRenderCommandEncoder> renderEncorder = [commandBuff renderCommandEncoderWithDescriptor:renderPassDesriptor];
     renderEncorder.label = @"myRenderEncorder";

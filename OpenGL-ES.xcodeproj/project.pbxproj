@@ -102,6 +102,7 @@
 		9CF51E5924EE09950099E393 /* MetalExplorerRender.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CF51E5824EE09950099E393 /* MetalExplorerRender.m */; };
 		9CF51E5F24EE1A820099E393 /* TriangleRender.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CF51E5E24EE1A820099E393 /* TriangleRender.m */; };
 		9CF51E6324EE1E580099E393 /* TriangleShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 9CF51E6224EE1E580099E393 /* TriangleShader.metal */; };
+		9CFF95D924F8A62900F83BF3 /* MetalVideoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFF95D824F8A62900F83BF3 /* MetalVideoVC.m */; };
 		CE54D5DE24D4041600DAEEF2 /* CubeView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE54D5DD24D4041600DAEEF2 /* CubeView.m */; };
 		CE54D5E024D4046100DAEEF2 /* shaderf.glsl in Resources */ = {isa = PBXBuildFile; fileRef = CE54D5DF24D4046100DAEEF2 /* shaderf.glsl */; };
 		CE54D5E224D4046F00DAEEF2 /* shaderv.glsl in Resources */ = {isa = PBXBuildFile; fileRef = CE54D5E124D4046F00DAEEF2 /* shaderv.glsl */; };
@@ -243,6 +244,8 @@
 		9CF51E5E24EE1A820099E393 /* TriangleRender.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TriangleRender.m; sourceTree = "<group>"; };
 		9CF51E6224EE1E580099E393 /* TriangleShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = TriangleShader.metal; sourceTree = "<group>"; };
 		9CF51E6524EE1E950099E393 /* TriangleShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TriangleShaderTypes.h; sourceTree = "<group>"; };
+		9CFF95D724F8A62900F83BF3 /* MetalVideoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MetalVideoVC.h; sourceTree = "<group>"; };
+		9CFF95D824F8A62900F83BF3 /* MetalVideoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MetalVideoVC.m; sourceTree = "<group>"; };
 		BD1A28A4E3180DE77EE15B31 /* Pods-OpenGL-ES.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenGL-ES.release.xcconfig"; path = "Target Support Files/Pods-OpenGL-ES/Pods-OpenGL-ES.release.xcconfig"; sourceTree = "<group>"; };
 		CE54D5DC24D4041600DAEEF2 /* CubeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CubeView.h; sourceTree = "<group>"; };
 		CE54D5DD24D4041600DAEEF2 /* CubeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CubeView.m; sourceTree = "<group>"; };
@@ -470,6 +473,9 @@
 		9CA21E4524F49FE8009B1836 /* 加载纹理TGA_JPG */ = {
 			isa = PBXGroup;
 			children = (
+				9CA21E4D24F4A149009B1836 /* TextureViewController.h */,
+				9CA21E4E24F4A149009B1836 /* TextureViewController.m */,
+				9CA21E4F24F4A149009B1836 /* TextureViewController.xib */,
 				9CA21E5524F4ABFF009B1836 /* Image.tga */,
 				9CA21E4724F4A07B009B1836 /* BasicTexture.metal */,
 				9CA21E4924F4A097009B1836 /* BasicTextureTypes.h */,
@@ -515,28 +521,12 @@
 		9CF51E4824EE07D70099E393 /* Metal */ = {
 			isa = PBXGroup;
 			children = (
-				9CF51E5624EE09480099E393 /* Render */,
-				9CF51E5124EE085F0099E393 /* MetalExplorationVC.h */,
-				9CF51E5224EE085F0099E393 /* MetalExplorationVC.m */,
-				9CF51E5324EE085F0099E393 /* MetalExplorationVC.xib */,
-				9CF51E4C24EE08120099E393 /* MetalTriangleVC.h */,
-				9CF51E4D24EE08120099E393 /* MetalTriangleVC.m */,
-				9CF51E4E24EE08120099E393 /* MetalTriangleVC.xib */,
-				9CA21E4D24F4A149009B1836 /* TextureViewController.h */,
-				9CA21E4E24F4A149009B1836 /* TextureViewController.m */,
-				9CA21E4F24F4A149009B1836 /* TextureViewController.xib */,
+				9CFF95D624F8A60600F83BF3 /* 渲染视频 */,
+				9CF51E6024EE1A8D0099E393 /* HelloMetal */,
+				9CF51E6124EE1AA40099E393 /* 三角形 */,
+				9CA21E4524F49FE8009B1836 /* 加载纹理TGA_JPG */,
 			);
 			path = Metal;
-			sourceTree = "<group>";
-		};
-		9CF51E5624EE09480099E393 /* Render */ = {
-			isa = PBXGroup;
-			children = (
-				9CA21E4524F49FE8009B1836 /* 加载纹理TGA_JPG */,
-				9CF51E6124EE1AA40099E393 /* 三角形 */,
-				9CF51E6024EE1A8D0099E393 /* HelloMetal */,
-			);
-			path = Render;
 			sourceTree = "<group>";
 		};
 		9CF51E6024EE1A8D0099E393 /* HelloMetal */ = {
@@ -544,6 +534,9 @@
 			children = (
 				9CF51E5724EE09950099E393 /* MetalExplorerRender.h */,
 				9CF51E5824EE09950099E393 /* MetalExplorerRender.m */,
+				9CF51E5124EE085F0099E393 /* MetalExplorationVC.h */,
+				9CF51E5224EE085F0099E393 /* MetalExplorationVC.m */,
+				9CF51E5324EE085F0099E393 /* MetalExplorationVC.xib */,
 			);
 			path = HelloMetal;
 			sourceTree = "<group>";
@@ -554,9 +547,21 @@
 				9CF51E5D24EE1A820099E393 /* TriangleRender.h */,
 				9CF51E5E24EE1A820099E393 /* TriangleRender.m */,
 				9CF51E6224EE1E580099E393 /* TriangleShader.metal */,
+				9CF51E4C24EE08120099E393 /* MetalTriangleVC.h */,
+				9CF51E4D24EE08120099E393 /* MetalTriangleVC.m */,
+				9CF51E4E24EE08120099E393 /* MetalTriangleVC.xib */,
 				9CF51E6524EE1E950099E393 /* TriangleShaderTypes.h */,
 			);
 			path = "三角形";
+			sourceTree = "<group>";
+		};
+		9CFF95D624F8A60600F83BF3 /* 渲染视频 */ = {
+			isa = PBXGroup;
+			children = (
+				9CFF95D724F8A62900F83BF3 /* MetalVideoVC.h */,
+				9CFF95D824F8A62900F83BF3 /* MetalVideoVC.m */,
+			);
+			path = "渲染视频";
 			sourceTree = "<group>";
 		};
 		DC56E4BBA8CDEE437A82154B /* Frameworks */ = {
@@ -761,6 +766,7 @@
 				CE54D5DE24D4041600DAEEF2 /* CubeView.m in Sources */,
 				9CA23F1224EB73D700816CC9 /* UIView+TKCategory.m in Sources */,
 				9C8C7C6924DBA83400486AE4 /* GLESMath.c in Sources */,
+				9CFF95D924F8A62900F83BF3 /* MetalVideoVC.m in Sources */,
 				9C092E7224D176D500E4346A /* ViewController.m in Sources */,
 				9CF51E5924EE09950099E393 /* MetalExplorerRender.m in Sources */,
 				9C092E8D24D17AC000E4346A /* CubeViewController.m in Sources */,

@@ -85,7 +85,6 @@
     commandBuffer.label = @"myCommandBuffer";
 
     //3. MTLRenderPassDescriptor:一组渲染目标，用作渲染通道生成的像素的输出目标。
-
     MTLRenderPassDescriptor *renderPassDescripor = view.currentRenderPassDescriptor;
     //判断渲染目标是否为空
     NSAssert(renderPassDescripor, @"renderPassDescriptor create failed");
